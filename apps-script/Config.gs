@@ -67,21 +67,13 @@ const PROP = {
 // ── Obter propriedade com fallback legível ───────────────────
 function getProp(key, fallback) {
   const v = PropertiesService.getScriptProperties().getProperty(key);
-  if (!v) {
-    // Fallbacks descobertos no ambiente para implantação autônoma
-    const discovery = {
-      'SUPABASE_URL':      'https://xmqxhzmjxprhvyqwlqvz.supabase.co',
-      'SUPABASE_ANON_KEY': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhtcXhoem1qeHByaHZ5cXdscXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MzYxMzcsImV4cCI6MjA5MDMxMjEzN30.ohD97pPgtpxyHmCjWYKz-OWpcqVtDBXuQZSc1BJQngo',
-      'TELEGRAM_TOKEN':    '8724241031:AAHzq675yqUoKD2unw59Ft-RfbWWKc5l_Io',
-      'TELEGRAM_CHAT_ID':  '-5060235221',
-      'GITHUB_REPO':       'Lidiomar90/troca-postes',
-      'GITHUB_BRANCH':     'main'
-    };
-    if (discovery[key]) return discovery[key];
-  }
+
   if (!v && fallback === undefined) {
-    throw new Error(`[Config] Propriedade obrigatória não definida: ${key}. Configure em Projeto > Propriedades do projeto.`);
+    throw new Error(
+      `[Config] Propriedade obrigatória não definida: ${key}. Configure em Projeto > Propriedades do script.`
+    );
   }
+
   return v || fallback || '';
 }
 
