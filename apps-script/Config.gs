@@ -34,13 +34,15 @@ const COL = {
 
 // ── Nomes das abas ───────────────────────────────────────────
 const SHEET = {
-  TROCAS:          'TROCAS',        // Dados operacionais principais
-  CONFIG:          'CONFIG',        // Configurações editáveis
-  BASE_REDE:       'BASE_REDE',     // Nós de rede (lat,lng,sigla,tipo)
-  LOG_EXECUCAO:    'LOG_EXECUCAO',  // Histórico de execuções do script
-  LOG_ALERTAS:     'LOG_ALERTAS',   // Histórico de alertas Telegram
-  FILA_REVISAO:    'FILA_REVISAO_MANUAL', // Registros com erro p/ revisão humana
-  FOTOS_FOLDER:    'FOTOS_TROCA_POSTES',  // Nome da pasta no Drive
+  TROCAS:          'TROCAS',
+  CONFIG:          'CONFIG',
+  BASE_REDE:       'BASE_REDE',
+  LOG_EXECUCAO:    'LOG_EXECUCAO',
+  LOG_ALERTAS:     'LOG_ALERTAS',
+  FILA_REVISAO:    'FILA_REVISAO_MANUAL',
+  FOTOS_FOLDER:    'FOTOS_TROCA_POSTES',
+  LOG_SISTEMA:     'LOG_SISTEMA',
+  STATUS_SISTEMA:  'STATUS_SISTEMA',
 };
 
 // ── Limites de proximidade (metros) ─────────────────────────
