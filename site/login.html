@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — Troca de Postes</title>
+
+  <!-- Google Identity Services -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0f1117;
+      color: #e0e0e0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Fundo animado */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(79,195,247,0.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 20%, rgba(21,101,192,0.08) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .card {
+      background: #13151f;
+      border: 1px solid #1e2535;
+      border-radius: 16px;
+      padding: 48px 40px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .logo {
+      font-size: 40px;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+
+    h1 span { color: #4fc3f7; }
+
+    .subtitle {
+      font-size: 13px;
+      color: #7a8aaa;
+      margin-bottom: 36px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #1e2535;
+      margin: 24px 0;
+    }
+
+    /* Container centralizado para o botão Google */
+    .google-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .acesso-restrito {
+      font-size: 11px;
+      color: #3a4a6a;
+      margin-top: 28px;
+    }
+
+    .acesso-restrito strong { color: #7a8aaa; }
+
+    /* Mensagem de erro */
+    #msg-erro {
+      display: none;
+      background: rgba(229,57,53,0.15);
+      border: 1px solid rgba(229,57,53,0.4);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12px;
+      color: #ef9a9a;
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    /* Loading state */
+    #loading {
+      display: none;
+      font-size: 13px;
+      color: #4fc3f7;
+      margin-top: 16px;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      border: 2px solid #2a3a5e;
+      border-top-color: #4fc3f7;
+      border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .badge {
+      display: inline-block;
+      background: #1a2a45;
+      border: 1px solid #2a3a5e;
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 11px;
+      color: #4fc3f7;
+      margin-bottom: 28px;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 16px;
+      left: 0; right: 0;
+      text-align: center;
+      font-size: 11px;
+      color: #3a4a6a;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <span class="logo">🗺️</span>
+  <h1>Troca de <span>Postes</span></h1>
+  <p class="subtitle">Mapa Operacional — Acesso Restrito</p>
+
+  <span class="badge">🔒 Somente usuários autorizados</span>
+
+  <div class="google-btn-wrapper">
+    <!-- Botão Google renderizado via GIS -->
+    <div id="g_id_onload"
+         data-client_id="458678720432-50pu13ca0n3urgp63qpfet2850igncpd.apps.googleusercontent.com"
+         data-callback="handleCredential"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-theme="filled_black"
+         data-size="large"
+         data-text="signin_with"
+         data-locale="pt-BR"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+  </div>
+
+  <div id="loading">
+    <span class="spinner"></span> Verificando acesso...
+  </div>
+
+  <div id="msg-erro"></div>
+
+  <hr class="divider" />
+
+  <p class="acesso-restrito">
+    Sistema interno de monitoramento de troca de postes.<br>
+    Acesso permitido apenas para <strong>e-mails autorizados</strong>.
+  </p>
+</div>
+
+<footer>Troca de Postes &copy; 2026 — Sistema Operacional</footer>
+
+<script>
+// ─────────────────────────────────────────────────────────────
+// CONFIGURAÇÃO — edite esta lista para controlar quem pode entrar.
+// Aceita: endereços exatos ("usuario@gmail.com")
+//         ou domínio inteiro ("@minhaempresa.com.br").
+// Deixe vazia para permitir qualquer conta Google.
+// ─────────────────────────────────────────────────────────────
+const EMAILS_PERMITIDOS = [
+  // Exemplos — substitua pelos e-mails reais:
+  // 'lidiomar90@gmail.com',
+  // '@telemont.com.br',
+];
+
+// ─────────────────────────────────────────────────────────────
+// CALLBACK do Google Identity Services
+// ─────────────────────────────────────────────────────────────
+function handleCredential(response) {
+  mostrarLoading(true);
+
+  try {
+    // Decodifica o JWT retornado pelo Google (sem lib externa)
+    const payload = JSON.parse(atob(response.credential.split('.')[1]
+      .replace(/-/g, '+').replace(/_/g, '/')));
+
+    const email  = payload.email  || '';
+    const nome   = payload.name   || email;
+    const foto   = payload.picture || '';
+
+    // Verifica se o e-mail está na lista de permitidos
+    if (!verificarAcesso(email)) {
+      mostrarErro('⛔ Acesso negado para <strong>' + email + '</strong>.<br>Entre em contato com o administrador.');
+      mostrarLoading(false);
+      return;
+    }
+
+    // Armazena sessão
+    sessionStorage.setItem('auth_user', JSON.stringify({
+      email, nome, foto,
+      ts: Date.now(),
+      token: response.credential,
+    }));
+
+    // Redireciona para o mapa
+    window.location.href = 'index.html';
+
+  } catch (e) {
+    mostrarErro('Erro ao processar login: ' + e.message);
+    mostrarLoading(false);
+  }
+}
+
+function verificarAcesso(email) {
+  // Lista vazia = acesso liberado para qualquer conta Google
+  if (!EMAILS_PERMITIDOS || EMAILS_PERMITIDOS.length === 0) return true;
+
+  const emailLower = email.toLowerCase();
+  return EMAILS_PERMITIDOS.some(function(regra) {
+    regra = regra.toLowerCase();
+    if (regra.startsWith('@')) {
+      // Regra de domínio
+      return emailLower.endsWith(regra);
+    }
+    return emailLower === regra;
+  });
+}
+
+function mostrarLoading(show) {
+  document.getElementById('loading').style.display = show ? 'block' : 'none';
+}
+
+function mostrarErro(msg) {
+  const el = document.getElementById('msg-erro');
+  el.innerHTML = msg;
+  el.style.display = 'block';
+}
+
+// Se já está autenticado, redireciona direto
+(function() {
+  try {
+    const u = JSON.parse(sessionStorage.getItem('auth_user') || 'null');
+    // Sessão válida por 8 horas
+    if (u && u.ts && (Date.now() - u.ts) < 8 * 3600 * 1000) {
+      window.location.href = 'index.html';
+    }
+  } catch(e) {}
+})();
+</script>
+
+</body>
+</html>

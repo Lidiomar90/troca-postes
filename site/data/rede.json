@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "sigla": "L01", "tipo": "BACKBONE" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-43.934, -19.917],
+          [-43.935, -19.918],
+          [-43.936, -19.919]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "sigla": "L02", "tipo": "DISTRIBUICAO" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-43.930, -19.910],
+          [-43.931, -19.911],
+          [-43.932, -19.912]
+        ]
+      }
+    }
+  ]
+}

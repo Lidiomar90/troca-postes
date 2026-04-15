@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Troca de Postes — Mapa Operacional</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+  <!-- Leaflet MarkerCluster -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/MarkerCluster.Default.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.3/leaflet.markercluster.min.js"></script>
+
+  <style>
+    /* ── CSS VARIABLES — TEMAS ── */
+    :root[data-theme="dark"] {
+      --bg:        #0f1117;
+      --bg2:       #13151f;
+      --bg3:       #1a1d2a;
+      --bg4:       #1a1d27;
+      --border:    #1e2535;
+      --border2:   #2a3a5e;
+      --border3:   #252a3b;
+      --border4:   #2a3040;
+      --text:      #e0e0e0;
+      --text2:     #7a8aaa;
+      --text3:     #888;
+      --text4:     #a0a0b0;
+      --text5:     #3a4a6a;
+      --accent:    #4fc3f7;
+      --h1-text:   #fff;
+      --card-bg:   #1a1d2a;
+      --panel-bg:  #13151f;
+      --item-hover:#1a2035;
+      --item-ativo:#1a2a45;
+      --det-bg:    #1a1d2a;
+      --popup-bg:  #1a1d2a;
+      --popup-tip: #1a1d2a;
+      --cluster-bg:#1a2a45;
+      --btn-bg:    #2a3a5e;
+      --btn-hover: #1a5276;
+      --overlay:   #000a;
+      --scrollbar-track: #13151f;
+      --scrollbar-thumb: #2a3a5e;
+      --tile-url: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+    }
+
+    :root[data-theme="light"] {
+      --bg:        #f0f2f5;
+      --bg2:       #e8eaf0;
+      --bg3:       #ffffff;
+      --bg4:       #ffffff;
+      --border:    #d0d5e0;
+      --border2:   #aab8d0;
+      --border3:   #c8d0e0;
+      --border4:   #c0c8d8;
+      --text:      #1a1d2a;
+      --text2:     #4a5a7a;
+      --text3:     #666;
+      --text4:     #555;
+      --text5:     #8090b0;
+      --accent:    #1565c0;
+      --h1-text:   #0d1117;
+      --card-bg:   #ffffff;
+      --panel-bg:  #f5f7fa;
+      --item-hover:#e8edf5;
+      --item-ativo:#d0dff5;
+      --det-bg:    #ffffff;
+      --popup-bg:  #ffffff;
+      --popup-tip: #ffffff;
+      --cluster-bg:#dce8f8;
+      --btn-bg:    #aab8d0;
+      --btn-hover: #7a9abf;
+      --overlay:   #0005;
+      --scrollbar-track: #e8eaf0;
+      --scrollbar-thumb: #aab8d0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--bg4);
+      border-bottom: 2px solid var(--border2);
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    header h1 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--h1-text);
+      flex: 1;
+    }
+    header h1 span { color: var(--accent); }
+    #data-hora { font-size: 11px; color: var(--text2); }
+
+    /* ── BOTÃO TEMA ── */
+    #btn-tema {
+      background: var(--btn-bg);
+      border: 1px solid var(--border2);
+      color: var(--text);
+      padding: 5px 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1;
+      transition: background 0.2s, transform 0.1s;
+      flex-shrink: 0;
+    }
+    #btn-tema:hover {
+      background: var(--btn-hover);
+      transform: scale(1.1);
+    }
+
+    /* ── DASHBOARD CARDS ── */
+    #dashboard {
+      background: var(--bg2);
+      padding: 8px 16px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 8px 14px;
+      min-width: 90px;
+      text-align: center;
+      border: 1px solid var(--border3);
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+    .card:hover, .card.ativo { border-color: var(--accent); }
+    .card .num {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+    .card .label { font-size: 10px; color: var(--text3); text-transform: uppercase; margin-top: 2px; }
+    .card.total .num { color: var(--text); }
+    .card.pendente .num { color: #ffb74d; }
+    .card.agendado .num { color: var(--accent); }
+    .card.hoje .num { color: #ef5350; }
+    .card.amanha .num { color: #ff7043; }
+    .card.executado .num { color: #66bb6a; }
+    .card.rede-proxima .num { color: #66bb6a; }
+    .card.atencao .num { color: #ffd54f; }
+    .card.sem-rede .num { color: #ef5350; }
+
+    /* ── FILTROS ── */
+    #filtros {
+      background: var(--bg2);
+      padding: 6px 16px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    #filtros label { font-size: 11px; color: var(--text3); }
+    #filtros select, #filtros input {
+      background: var(--card-bg);
+      border: 1px solid var(--border4);
+      color: var(--text);
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    #btn-limpar {
+      background: var(--btn-bg);
+      border: none;
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    #btn-limpar:hover { background: var(--btn-hover); }
+    #count-filtro { font-size: 11px; color: var(--text2); margin-left: auto; }
+
+    /* ── LAYOUT PRINCIPAL ── */
+    #main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    /* ── MAPA ── */
+    #map {
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* ── PAINEL LATERAL ── */
+    #panel {
+      width: 320px;
+      background: var(--panel-bg);
+      border-left: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    #panel-header {
+      padding: 8px 12px;
+      font-size: 12px;
+      color: var(--text2);
+      border-bottom: 1px solid var(--border);
+      background: var(--card-bg);
+    }
+    #lista {
+      flex: 1;
+      overflow-y: auto;
+      padding: 4px 0;
+    }
+    #lista::-webkit-scrollbar { width: 4px; }
+    #lista::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+    #lista::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 2px; }
+
+    .item {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .item:hover { background: var(--item-hover); }
+    .item.ativo { background: var(--item-ativo); border-left: 3px solid var(--accent); }
+    .item-id { font-size: 11px; color: var(--text2); }
+    .item-data { font-size: 12px; font-weight: 700; color: var(--text); }
+    .item-addr { font-size: 11px; color: var(--text4); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .item-badges { display: flex; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+    .badge {
+      font-size: 10px;
+      padding: 1px 6px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    .badge-PENDENTE   { background: #3a2a0a; color: #ffb74d; }
+    .badge-AGENDADO   { background: #0a2a3a; color: #4fc3f7; }
+    .badge-EXECUTADO  { background: #0a2a0a; color: #66bb6a; }
+    .badge-CANCELADO  { background: #2a2a2a; color: #888; }
+    .badge-rede-proxima { background: #0a2a0a; color: #66bb6a; }
+    .badge-atencao    { background: #2a2a0a; color: #ffd54f; }
+    .badge-sem-rede   { background: #2a0a0a; color: #ef5350; }
+    .badge-hoje       { background: #3a0a0a; color: #ff5252; }
+    .badge-amanha     { background: #3a1a0a; color: #ff7043; }
+
+    /* tema claro — badges mais legíveis */
+    [data-theme="light"] .badge-PENDENTE   { background: #fff3e0; color: #e65100; }
+    [data-theme="light"] .badge-AGENDADO   { background: #e3f2fd; color: #1565c0; }
+    [data-theme="light"] .badge-EXECUTADO  { background: #e8f5e9; color: #2e7d32; }
+    [data-theme="light"] .badge-CANCELADO  { background: #f5f5f5; color: #555; }
+    [data-theme="light"] .badge-rede-proxima { background: #e8f5e9; color: #2e7d32; }
+    [data-theme="light"] .badge-atencao    { background: #fffde7; color: #f57f17; }
+    [data-theme="light"] .badge-sem-rede   { background: #ffebee; color: #c62828; }
+    [data-theme="light"] .badge-hoje       { background: #ffebee; color: #b71c1c; }
+    [data-theme="light"] .badge-amanha     { background: #fbe9e7; color: #bf360c; }
+
+    /* ── POPUP DETALHE ── */
+    #detalhe {
+      display: none;
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--det-bg);
+      border: 1px solid var(--border2);
+      border-radius: 10px;
+      padding: 20px;
+      width: 380px;
+      max-width: 95vw;
+      z-index: 9999;
+      box-shadow: 0 8px 32px #000a;
+    }
+    #detalhe h3 { font-size: 15px; color: var(--accent); margin-bottom: 12px; }
+    #detalhe .field { margin-bottom: 8px; }
+    #detalhe .field-label { font-size: 10px; color: var(--text2); text-transform: uppercase; }
+    #detalhe .field-value { font-size: 13px; color: var(--text); }
+    #detalhe .btn-fechar {
+      position: absolute; top: 10px; right: 12px;
+      background: none; border: none; color: var(--text3); font-size: 18px; cursor: pointer;
+    }
+    #overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: var(--overlay);
+      z-index: 9998;
+    }
+
+    /* ── ATUALIZADO EM ── */
+    #gerado-em {
+      text-align: center;
+      font-size: 10px;
+      color: var(--text5);
+      padding: 4px;
+      flex-shrink: 0;
+    }
+
+    /* ── Leaflet popup customizado ── */
+    .leaflet-popup-content-wrapper {
+      background: var(--popup-bg) !important;
+      color: var(--text) !important;
+      border: 1px solid var(--border2) !important;
+    }
+    .leaflet-popup-tip { background: var(--popup-tip) !important; }
+    .popup-titulo { font-weight: 700; font-size: 13px; color: var(--accent); margin-bottom: 4px; }
+    .popup-linha { font-size: 11px; margin: 2px 0; color: var(--text); }
+
+    /* Leaflet zoom controls — tema claro */
+    [data-theme="light"] .leaflet-bar a {
+      background: #fff;
+      color: #333;
+      border-color: #ccc;
+    }
+    [data-theme="light"] .leaflet-bar a:hover {
+      background: #f0f0f0;
+    }
+
+    @media (max-width: 700px) {
+      #panel { display: none; }
+    }
+
+    /* ── BOTÕES DE AÇÃO NO FILTROS ── */
+    .btn-acao {
+      background: var(--btn-bg);
+      border: 1px solid var(--border2);
+      color: var(--text);
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 11px;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    .btn-acao:hover { background: var(--btn-hover); }
+    .btn-acao.verde  { border-color: #66bb6a; color: #66bb6a; }
+    .btn-acao.azul   { border-color: var(--accent); color: var(--accent); }
+
+    /* ── PAINEL EDIÇÃO ── */
+    #edit-panel {
+      display: none;
+      position: fixed;
+      top: 0; right: 0;
+      height: 100vh;
+      width: 340px;
+      max-width: 100vw;
+      background: var(--det-bg);
+      border-left: 2px solid var(--border2);
+      z-index: 10000;
+      box-shadow: -4px 0 24px #000a;
+      flex-direction: column;
+      overflow-y: auto;
+      padding: 20px;
+    }
+    #edit-panel.aberto { display: flex; }
+    #edit-panel h3 { font-size: 14px; color: var(--accent); margin-bottom: 16px; }
+    #edit-panel .btn-fechar-edit {
+      position: absolute; top: 12px; right: 14px;
+      background: none; border: none; color: var(--text3); font-size: 20px; cursor: pointer;
+    }
+    .edit-group { margin-bottom: 14px; }
+    .edit-group label { display: block; font-size: 10px; color: var(--text2); text-transform: uppercase; margin-bottom: 4px; }
+    .edit-group select,
+    .edit-group input,
+    .edit-group textarea {
+      width: 100%;
+      background: var(--bg3);
+      border: 1px solid var(--border4);
+      color: var(--text);
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-family: inherit;
+    }
+    .edit-group textarea { resize: vertical; min-height: 60px; }
+    #btn-salvar-edit {
+      width: 100%;
+      background: #1a5276;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 8px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    #btn-salvar-edit:hover { background: #2471a3; }
+
+    /* ── FOTO ── */
+    .foto-area { margin: 12px 0; }
+    .foto-area label { font-size: 10px; color: var(--text2); text-transform: uppercase; }
+    #foto-preview {
+      width: 100%; max-height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      border: 1px solid var(--border2);
+      display: none;
+      margin-top: 6px;
+    }
+    #btn-foto {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--btn-bg); border: 1px solid var(--border2);
+      color: var(--text); padding: 5px 12px;
+      border-radius: 4px; cursor: pointer; font-size: 12px;
+      margin-top: 4px;
+    }
+    #btn-foto:hover { background: var(--btn-hover); }
+    #foto-indicator {
+      font-size: 10px; color: #66bb6a;
+      display: none; margin-left: 6px;
+    }
+    #input-foto { display: none; }
+
+    /* ── TOAST ── */
+    #toast {
+      position: fixed; bottom: 24px; left: 50%;
+      transform: translateX(-50%);
+      background: #1a3a5e; border: 1px solid var(--accent);
+      color: var(--accent); padding: 8px 20px;
+      border-radius: 20px; font-size: 12px;
+      z-index: 99999; opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    #toast.show { opacity: 1; }
+
+    /* ── REDE STATUS NA LISTA — barra lateral colorida ── */
+    .item[data-rede="REDE PRÓXIMA"] { border-left: 3px solid #66bb6a !important; }
+    .item[data-rede="ATENÇÃO"]      { border-left: 3px solid #ffd54f !important; }
+    .item[data-rede="SEM REDE"]     { border-left: 3px solid #ef5350 !important; }
+
+    /* ── LOADING REDE ── */
+    #rede-loading {
+      font-size: 10px; color: var(--accent);
+      padding: 2px 8px;
+      animation: blink 1.2s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    /* ── AUTH — painel do usuário logado ── */
+    #user-panel {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    #user-foto {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 2px solid var(--border2);
+      object-fit: cover;
+      display: none;
+    }
+    #user-nome {
+      font-size: 11px;
+      color: var(--text2);
+      max-width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    #btn-logout {
+      background: transparent;
+      border: 1px solid var(--border2);
+      color: var(--text3);
+      padding: 3px 8px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 11px;
+      transition: background 0.2s, color 0.2s;
+    }
+    #btn-logout:hover {
+      background: rgba(229,57,53,0.15);
+      border-color: rgba(229,57,53,0.5);
+      color: #ef9a9a;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🔧 <span>TROCA DE POSTES</span> — Mapa Operacional</h1>
+  <div id="data-hora"></div>
+  <div id="user-panel">
+    <img id="user-foto" src="" alt="foto" />
+    <span id="user-nome"></span>
+    <button id="btn-logout" title="Sair">⏻ Sair</button>
+  </div>
+  <button id="btn-tema" title="Alternar tema claro/escuro">🌙</button>
+</header>
+
+<div id="dashboard">
+  <div class="card total"    data-filtro=""          id="c-total">    <div class="num" id="n-total">0</div><div class="label">Total</div></div>
+  <div class="card hoje"     data-filtro="hoje"      id="c-hoje">     <div class="num" id="n-hoje">0</div><div class="label">Hoje</div></div>
+  <div class="card amanha"   data-filtro="amanha"    id="c-amanha">   <div class="num" id="n-amanha">0</div><div class="label">Amanhã</div></div>
+  <div class="card pendente" data-filtro="PENDENTE"  id="c-pendente"> <div class="num" id="n-pendente">0</div><div class="label">Pendente</div></div>
+  <div class="card agendado" data-filtro="AGENDADO"  id="c-agendado"> <div class="num" id="n-agendado">0</div><div class="label">Agendado</div></div>
+  <div class="card executado"data-filtro="EXECUTADO" id="c-executado"><div class="num" id="n-executado">0</div><div class="label">Executado</div></div>
+  <div class="card rede-proxima" data-filtro="REDE PRÓXIMA" id="c-rede"><div class="num" id="n-rede">0</div><div class="label">Rede Próxima</div></div>
+  <div class="card atencao"  data-filtro="ATENÇÃO"   id="c-atencao">  <div class="num" id="n-atencao">0</div><div class="label">Atenção</div></div>
+  <div class="card sem-rede" data-filtro="SEM REDE"  id="c-semrede">  <div class="num" id="n-semrede">0</div><div class="label">Sem Rede</div></div>
+</div>
+
+<div id="filtros">
+  <label>Status:</label>
+  <select id="f-status">
+    <option value="">Todos</option>
+    <option>PENDENTE</option>
+    <option>AGENDADO</option>
+    <option>EXECUTADO</option>
+    <option>CANCELADO</option>
+  </select>
+  <label>Rede:</label>
+  <select id="f-rede">
+    <option value="">Todos</option>
+    <option>REDE PRÓXIMA</option>
+    <option>ATENÇÃO</option>
+    <option>SEM REDE</option>
+  </select>
+  <label>Cidade:</label>
+  <select id="f-cidade"><option value="">Todas</option></select>
+  <label>Período:</label>
+  <select id="f-periodo">
+    <option value="">Todos</option>
+    <option value="hoje">Hoje</option>
+    <option value="amanha">Amanhã</option>
+    <option value="semana">Próx. 7 dias</option>
+    <option value="mes">Próx. 30 dias</option>
+    <option value="atrasado">Atrasados</option>
+  </select>
+  <input type="text" id="f-busca" placeholder="Buscar ID, endereço..." style="flex:1; min-width:120px;" />
+  <button id="btn-limpar">✕ Limpar</button>
+  <span id="count-filtro">0 registros</span>
+  <span id="rede-loading" style="display:none">⚡ carregando rede…</span>
+  <button class="btn-acao verde" id="btn-exportar" title="Exportar CSV da lista atual">📊 CSV</button>
+  <button class="btn-acao azul"  id="btn-pendentes" title="Extrair endereços sem coordenadas">📍 Pendentes</button>
+  <button class="btn-acao azul"  id="btn-rede-reload" title="Recalcular proximidade de rede">🔁 Rede</button>
+</div>
+
+<div id="main">
+  <div id="map"></div>
+  <div id="panel">
+    <div id="panel-header">Lista de trocas</div>
+    <div id="lista"></div>
+    <div id="gerado-em"></div>
+  </div>
+</div>
+
+<!-- Detalhe overlay -->
+<div id="overlay"></div>
+<div id="detalhe">
+  <button class="btn-fechar" onclick="fecharDetalhe()">✕</button>
+  <h3 id="det-titulo">Troca #</h3>
+  <div id="det-corpo"></div>
+</div>
+
+<!-- Painel de edição -->
+<div id="edit-panel">
+  <button class="btn-fechar-edit" onclick="fecharEdit()">✕</button>
+  <h3>✏️ Editar Troca <span id="edit-id-label"></span></h3>
+
+  <div class="edit-group">
+    <label>Status</label>
+    <select id="edit-status">
+      <option>PENDENTE</option>
+      <option>AGENDADO</option>
+      <option>EXECUTADO</option>
+      <option>CANCELADO</option>
+    </select>
+  </div>
+  <div class="edit-group">
+    <label>Data da Troca</label>
+    <input type="text" id="edit-data" placeholder="DD/MM/YYYY" />
+  </div>
+  <div class="edit-group">
+    <label>Responsável</label>
+    <input type="text" id="edit-responsavel" placeholder="Empresa ou técnico" />
+  </div>
+  <div class="edit-group">
+    <label>Observação</label>
+    <textarea id="edit-obs" rows="3" placeholder="Notas sobre a visita ou troca..."></textarea>
+  </div>
+
+  <!-- Foto -->
+  <div class="foto-area">
+    <label>Foto do local <span id="foto-indicator">📷 foto salva</span></label>
+    <br>
+    <button id="btn-foto" type="button">📷 Capturar / Selecionar foto</button>
+    <input id="input-foto" type="file" accept="image/*" capture="environment" />
+    <img id="foto-preview" src="" alt="preview" />
+  </div>
+
+  <button id="btn-salvar-edit">💾 Salvar alterações</button>
+  <div id="edit-msg" style="font-size:11px;color:#66bb6a;margin-top:8px;text-align:center;"></div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Canvas oculto para compressão de imagem -->
+<canvas id="canvas-foto" style="display:none"></canvas>
+
+<script>
+// ============================================================
+// AUTH GUARD — verifica sessão Google antes de exibir o mapa
+// ============================================================
+(function authGuard() {
+  try {
+    var raw = sessionStorage.getItem('auth_user');
+    if (!raw) { window.location.replace('login.html'); return; }
+    var u = JSON.parse(raw);
+    // Sessão expira em 8 horas
+    if (!u || !u.ts || (Date.now() - u.ts) > 8 * 3600 * 1000) {
+      sessionStorage.removeItem('auth_user');
+      window.location.replace('login.html');
+    }
+  } catch(e) {
+    window.location.replace('login.html');
+  }
+})();
+
+// ============================================================
+// app.js — lógica do mapa TROCA-POSTES
+// ============================================================
+
+const DATA_URL = './data/trocas.json';
+
+const TILES = {
+  dark:  'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  light: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+};
+
+let allTrocas = [];
+let filteredTrocas = [];
+let map, markerGroup, tileLayer;
+let marcadores = {}; // id → marker
+let filtroAtivo = '';
+let temaAtual = localStorage.getItem('tema') || 'dark';
+
+// ── Tema ─────────────────────────────────────────────────────
+
+function aplicarTema(tema) {
+  temaAtual = tema;
+  document.documentElement.setAttribute('data-theme', tema);
+  document.getElementById('btn-tema').textContent = tema === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('tema', tema);
+
+  // troca o tile layer do mapa (se já inicializado)
+  if (map && tileLayer) {
+    map.removeLayer(tileLayer);
+    tileLayer = L.tileLayer(TILES[tema], { maxZoom: 19 });
+    tileLayer.addTo(map);
+    // garante que o tileLayer fique abaixo dos marcadores
+    tileLayer.bringToBack();
+  }
+
+  // atualiza clusters (ícones têm cores hardcoded — precisa recriar)
+  if (markerGroup) {
+    atualizarMapa();
+  }
+}
+
+document.getElementById('btn-tema').addEventListener('click', () => {
+  aplicarTema(temaAtual === 'dark' ? 'light' : 'dark');
+});
+
+// ── Inicialização ─────────────────────────────────────────────
+
+async function init() {
+  document.documentElement.setAttribute('data-theme', temaAtual);
+  document.getElementById('btn-tema').textContent = temaAtual === 'dark' ? '☀️' : '🌙';
+  initUserPanel();
+  initMap();
+  await carregarDados();
+  initFiltros();
+  atualizarDataHora();
+  setInterval(atualizarDataHora, 1000);
+}
+
+function initUserPanel() {
+  try {
+    var u = JSON.parse(sessionStorage.getItem('auth_user') || '{}');
+    if (u.nome) document.getElementById('user-nome').textContent = u.nome;
+    if (u.foto) {
+      var img = document.getElementById('user-foto');
+      img.src = u.foto;
+      img.style.display = 'block';
+    }
+  } catch(e) {}
+
+  document.getElementById('btn-logout').addEventListener('click', function() {
+    sessionStorage.removeItem('auth_user');
+    // Revoga token Google se disponível
+    if (window.google && window.google.accounts) {
+      try { window.google.accounts.id.disableAutoSelect(); } catch(e) {}
+    }
+    window.location.replace('login.html');
+  });
+}
+
+function initMap() {
+  map = L.map('map', {
+    center: [-19.917, -43.934], // Belo Horizonte
+    zoom: 10,
+    zoomControl: true,
+    attributionControl: false
+  });
+
+  tileLayer = L.tileLayer(TILES[temaAtual], { maxZoom: 19 });
+  tileLayer.addTo(map);
+
+  markerGroup = L.markerClusterGroup({
+    showCoverageOnHover: false,
+    maxClusterRadius: 40,
+    iconCreateFunction: criarIconeCluster
+  });
+  map.addLayer(markerGroup);
+}
+
+const SUPABASE_URL = 'https://xmqxhzmjxprhvyqwlqvz.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhtcXhoem1qeHByaHZ5cXdscXZ6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ3MzYxMzcsImV4cCI6MjA5MDMxMjEzN30.ohD97pPgtpxyHmCjWYKz-OWpcqVtDBXuQZSc1BJQngo';
+
+async function carregarDados() {
+  try {
+    const url = `${SUPABASE_URL}/rest/v1/troca_postes_v2?select=*&order=data_troca.asc`;
+    const resp = await fetch(url, {
+      headers: { 'apikey': SUPABASE_KEY, 'Authorization': `Bearer ${SUPABASE_KEY}` }
+    });
+    if (!resp.ok) throw new Error('Falha ao conectar com banco');
+    const data = await resp.json();
+    
+    allTrocas = data.map(t => ({
+      ...t,
+      tipo_old: t.tipo_poste_old,
+      tipo_new: t.tipo_poste_new,
+      data_troca: t.data_troca ? new Date(t.data_troca).toLocaleDateString('pt-BR') : '—',
+      dias_ate: calcularDiasAte(t.data_troca)
+    }));
+
+    document.getElementById('gerado-em').textContent = 'Live: Banco de Dados Sincronizado';
+  } catch (e) {
+    document.getElementById('gerado-em').textContent = 'Erro API: ' + e.message;
+  }
+  renderizar();
+  enrichRedeStatus();
+}
+
+function calcularDiasAte(dataStr) {
+  if (!dataStr) return null;
+  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const alvo = new Date(dataStr); alvo.setHours(0,0,0,0);
+  return Math.round((alvo - hoje) / (1000 * 60 * 60 * 24));
+}
+
+// ── Renderização ──────────────────────────────────────────────
+
+function renderizar() {
+  const fStatus  = document.getElementById('f-status').value;
+  const fRede    = document.getElementById('f-rede').value;
+  const fCidade  = document.getElementById('f-cidade').value;
+  const fPeriodo = document.getElementById('f-periodo').value;
+  const fBusca   = document.getElementById('f-busca').value.toLowerCase();
+
+  filteredTrocas = allTrocas.filter(t => {
+    if (t.status === 'CANCELADO' && !fStatus) return false;
+    if (fStatus && t.status !== fStatus) return false;
+    if (fRede   && t.rede_status !== fRede) return false;
+    if (fCidade && t.cidade !== fCidade) return false;
+    if (fPeriodo) {
+      const d = t.dias_ate;
+      if (d === null) return false;
+      if (fPeriodo === 'hoje'     && d !== 0) return false;
+      if (fPeriodo === 'amanha'   && d !== 1) return false;
+      if (fPeriodo === 'semana'   && (d < 0 || d > 7)) return false;
+      if (fPeriodo === 'mes'      && (d < 0 || d > 30)) return false;
+      if (fPeriodo === 'atrasado' && d >= 0) return false;
+    }
+    if (filtroAtivo === 'hoje'   && t.dias_ate !== 0) return false;
+    if (filtroAtivo === 'amanha' && t.dias_ate !== 1) return false;
+    if (filtroAtivo && filtroAtivo !== 'hoje' && filtroAtivo !== 'amanha') {
+      if (filtroAtivo.includes('REDE') || filtroAtivo === 'ATENÇÃO' || filtroAtivo === 'SEM REDE') {
+        if (t.rede_status !== filtroAtivo) return false;
+      } else {
+        if (t.status !== filtroAtivo) return false;
+      }
+    }
+    if (fBusca) {
+      const texto = [t.id, t.logradouro, t.bairro, t.cidade, t.responsavel, t.obs]
+        .join(' ').toLowerCase();
+      if (!texto.includes(fBusca)) return false;
+    }
+    return true;
+  });
+
+  atualizarDashboard();
+  atualizarMapa();
+  atualizarLista();
+  document.getElementById('count-filtro').textContent = filteredTrocas.length + ' registros';
+}
+
+// ── Dashboard cards ───────────────────────────────────────────
+
+function atualizarDashboard() {
+  const t = allTrocas.filter(x => x.status !== 'CANCELADO');
+  const set = (id, val) => document.getElementById(id).textContent = val;
+  set('n-total',    t.length);
+  set('n-hoje',     t.filter(x => x.dias_ate === 0).length);
+  set('n-amanha',   t.filter(x => x.dias_ate === 1).length);
+  set('n-pendente', t.filter(x => x.status === 'PENDENTE').length);
+  set('n-agendado', t.filter(x => x.status === 'AGENDADO').length);
+  set('n-executado',t.filter(x => x.status === 'EXECUTADO').length);
+  set('n-rede',     t.filter(x => x.rede_status === 'REDE PRÓXIMA').length);
+  set('n-atencao',  t.filter(x => x.rede_status === 'ATENÇÃO').length);
+  set('n-semrede',  t.filter(x => x.rede_status === 'SEM REDE').length);
+}
+
+// ── Mapa ──────────────────────────────────────────────────────
+
+const ICON_COLOR = {
+  'PENDENTE':  '#ffb74d',
+  'AGENDADO':  '#4fc3f7',
+  'EXECUTADO': '#66bb6a',
+  'CANCELADO': '#777',
+};
+
+function corStatus(status) {
+  return ICON_COLOR[status] || '#aaa';
+}
+
+function criarIcone(troca) {
+  const cor = troca.dias_ate === 0 ? '#ef5350'
+            : troca.dias_ate === 1 ? '#ff7043'
+            : corStatus(troca.status);
+
+  const redeCorBorda = troca.rede_status === 'REDE PRÓXIMA' ? '#66bb6a'
+                     : troca.rede_status === 'ATENÇÃO'      ? '#ffd54f'
+                     : troca.rede_status === 'SEM REDE'     ? '#ef5350'
+                     : '#555';
+
+  const shadow = temaAtual === 'light' ? '0 0 4px #0005' : '0 0 4px #000a';
+
+  return L.divIcon({
+    className: '',
+    html: `<div style="
+      width:14px;height:14px;border-radius:50%;
+      background:${cor};
+      border:2px solid ${redeCorBorda};
+      box-shadow:${shadow};
+    "></div>`,
+    iconSize: [14, 14],
+    iconAnchor: [7, 7],
+    popupAnchor: [0, -8],
+  });
+}
+
+function criarIconeCluster(cluster) {
+  const count = cluster.getChildCount();
+  const isDark = temaAtual === 'dark';
+  const bg     = isDark ? '#1a2a45'  : '#dce8f8';
+  const border = isDark ? '#4fc3f7'  : '#1565c0';
+  const color  = isDark ? '#4fc3f7'  : '#1565c0';
+  const shadow = isDark ? '0 2px 6px #000a' : '0 2px 6px #0003';
+
+  return L.divIcon({
+    className: '',
+    html: `<div style="
+      width:34px;height:34px;border-radius:50%;
+      background:${bg};
+      border:2px solid ${border};
+      display:flex;align-items:center;justify-content:center;
+      font-size:12px;font-weight:700;color:${color};
+      box-shadow:${shadow};
+    ">${count}</div>`,
+    iconSize: [34, 34],
+    iconAnchor: [17, 17],
+  });
+}
+
+function atualizarMapa() {
+  markerGroup.clearLayers();
+  marcadores = {};
+
+  filteredTrocas.forEach(t => {
+    if (!t.lat || !t.lng) return;
+
+    const marker = L.marker([t.lat, t.lng], { icon: criarIcone(t) });
+    marker.bindPopup(buildPopupHTML(t), { maxWidth: 260 });
+    marker.on('click', () => abrirDetalhe(t));
+
+    marcadores[t.id] = marker;
+    markerGroup.addLayer(marker);
+  });
+}
+
+function buildPopupHTML(t) {
+  const redeEmoji = t.rede_status === 'REDE PRÓXIMA' ? '🟢'
+                  : t.rede_status === 'ATENÇÃO'      ? '🟡'
+                  : t.rede_status === 'SEM REDE'     ? '🔴' : '⚪';
+  const diasStr = t.dias_ate === 0 ? '<b style="color:#ef5350">HOJE</b>'
+                : t.dias_ate === 1 ? '<b style="color:#ff7043">AMANHÃ</b>'
+                : t.dias_ate < 0   ? `<b style="color:#888">atrasado ${Math.abs(t.dias_ate)}d</b>`
+                : `em ${t.dias_ate}d`;
+  return `
+    <div class="popup-titulo">#${t.id} — ${diasStr}</div>
+    <div class="popup-linha">📅 ${t.data_troca}</div>
+    <div class="popup-linha">📍 ${t.logradouro}, ${t.numero} — ${t.bairro}</div>
+    <div class="popup-linha">🏙️ ${t.cidade}/${t.uf}</div>
+    <div class="popup-linha">🔧 ${t.tipo_old || '—'} → ${t.tipo_new || '—'}</div>
+    <div class="popup-linha">${redeEmoji} ${t.rede_status || 'N/A'} ${t.rede_dist_m ? '('+t.rede_dist_m+'m)' : ''}</div>
+    ${t.responsavel ? `<div class="popup-linha">👤 ${t.responsavel}</div>` : ''}
+  `;
+}
+
+// ── Lista lateral ─────────────────────────────────────────────
+
+function atualizarLista() {
+  const lista = document.getElementById('lista');
+  lista.innerHTML = '';
+
+  const sorted = [...filteredTrocas].sort((a, b) => {
+    const da = a.dias_ate === null ? 9999 : a.dias_ate < 0 ? -9999 + a.dias_ate : a.dias_ate;
+    const db = b.dias_ate === null ? 9999 : b.dias_ate < 0 ? -9999 + b.dias_ate : b.dias_ate;
+    return da - db;
+  });
+
+  sorted.forEach(t => {
+    const el = document.createElement('div');
+    el.className = 'item';
+    el.id = 'item-' + t.id;
+    if (t.rede_status) el.dataset.rede = t.rede_status;
+
+    const diasStr = t.dias_ate === 0 ? '<span class="badge badge-hoje">HOJE</span>'
+                  : t.dias_ate === 1 ? '<span class="badge badge-amanha">AMANHÃ</span>'
+                  : t.dias_ate !== null && t.dias_ate < 0
+                    ? `<span class="badge badge-CANCELADO">ATRASO ${Math.abs(t.dias_ate)}d</span>`
+                  : '';
+
+    const redeBadge = t.rede_status
+      ? `<span class="badge badge-${t.rede_status === 'REDE PRÓXIMA' ? 'rede-proxima' : t.rede_status === 'ATENÇÃO' ? 'atencao' : 'sem-rede'}">${t.rede_status}</span>`
+      : '';
+
+    el.innerHTML = `
+      <div class="item-id">#${t.id}</div>
+      <div class="item-data">${t.data_troca || '—'}</div>
+      <div class="item-addr" title="${t.logradouro}, ${t.numero} — ${t.cidade}">${t.logradouro}, ${t.numero} — ${t.bairro}</div>
+      <div class="item-badges">
+        <span class="badge badge-${t.status}">${t.status}</span>
+        ${diasStr}
+        ${redeBadge}
+      </div>
+    `;
+    el.onclick = () => selecionarTroca(t);
+    lista.appendChild(el);
+  });
+
+  document.getElementById('panel-header').textContent = `${sorted.length} trocas`;
+}
+
+// ── Seleção e detalhe ─────────────────────────────────────────
+
+let trocaSelecionada = null;
+
+function selecionarTroca(t) {
+  trocaSelecionada = t;
+  document.querySelectorAll('.item').forEach(el => el.classList.remove('ativo'));
+  const el = document.getElementById('item-' + t.id);
+  if (el) { el.classList.add('ativo'); el.scrollIntoView({ block: 'nearest' }); }
+  if (t.lat && t.lng) {
+    map.setView([t.lat, t.lng], Math.max(map.getZoom(), 15));
+    if (marcadores[t.id]) marcadores[t.id].openPopup();
+  }
+}
+
+function abrirDetalhe(t) {
+  const redeEmoji = t.rede_status === 'REDE PRÓXIMA' ? '🟢 '
+                  : t.rede_status === 'ATENÇÃO'      ? '🟡 '
+                  : t.rede_status === 'SEM REDE'     ? '🔴 ' : '';
+  const mapsUrl = t.lat && t.lng
+    ? `<a href="https://maps.google.com/?q=${t.lat},${t.lng}" target="_blank" style="color:var(--accent)">Abrir no Maps</a>`
+    : '';
+
+  document.getElementById('det-titulo').textContent = `Troca #${t.id}`;
+  document.getElementById('det-corpo').innerHTML = `
+    ${field('Data', t.data_troca)}
+    ${field('Endereço', `${t.logradouro}, ${t.numero} — ${t.bairro}`)}
+    ${field('Cidade', `${t.cidade}/${t.uf}`)}
+    ${field('Responsável', t.responsavel || '—')}
+    ${field('Status', `<span class="badge badge-${t.status}">${t.status}</span>${t._editado ? ' <span style="color:#ffd54f;font-size:10px">✏️ editado</span>' : ''}`)}
+    ${field('Rede', `${redeEmoji}${t.rede_status || 'N/A'} ${t.rede_dist_m ? '('+t.rede_dist_m+'m)' : ''}`)}
+    ${t.obs ? field('Obs', t.obs) : ''}
+    ${t.lat ? field('Coords', `${t.lat.toFixed(5)}, ${t.lng.toFixed(5)} ${mapsUrl}`) : ''}
+    ${field('Geo', t.geo_status || '—')}
+    <div style="margin-top:12px;display:flex;gap:8px">
+      <button class="btn-acao azul" onclick="fecharDetalhe();abrirEdit(allTrocas.find(x=>x.id==='${t.id}'))">✏️ Editar</button>
+      ${t.lat ? `<a href="https://maps.google.com/?q=${t.lat},${t.lng}" target="_blank" class="btn-acao verde">🗺️ Maps</a>` : ''}
+    </div>
+  `;
+  document.getElementById('detalhe').style.display = 'block';
+  document.getElementById('overlay').style.display = 'block';
+}
+
+function field(label, value) {
+  return `<div class="field">
+    <div class="field-label">${label}</div>
+    <div class="field-value">${value || '—'}</div>
+  </div>`;
+}
+
+function fecharDetalhe() {
+  document.getElementById('detalhe').style.display = 'none';
+  document.getElementById('overlay').style.display = 'none';
+}
+document.getElementById('overlay').onclick = fecharDetalhe;
+
+// ── Filtros e dashboard click ─────────────────────────────────
+
+function initFiltros() {
+  const cidades = [...new Set(allTrocas.map(t => t.cidade).filter(Boolean))].sort();
+  const sel = document.getElementById('f-cidade');
+  cidades.forEach(c => {
+    const opt = document.createElement('option');
+    opt.value = c; opt.textContent = c;
+    sel.appendChild(opt);
+  });
+
+  ['f-status','f-rede','f-cidade','f-periodo'].forEach(id =>
+    document.getElementById(id).addEventListener('change', renderizar)
+  );
+  document.getElementById('f-busca').addEventListener('input', renderizar);
+  document.getElementById('btn-limpar').addEventListener('click', limparFiltros);
+
+  document.querySelectorAll('.card[data-filtro]').forEach(card => {
+    card.addEventListener('click', () => {
+      const f = card.dataset.filtro;
+      if (filtroAtivo === f) {
+        filtroAtivo = '';
+        card.classList.remove('ativo');
+      } else {
+        document.querySelectorAll('.card').forEach(c => c.classList.remove('ativo'));
+        filtroAtivo = f;
+        card.classList.add('ativo');
+      }
+      renderizar();
+    });
+  });
+}
+
+function limparFiltros() {
+  document.getElementById('f-status').value = '';
+  document.getElementById('f-rede').value = '';
+  document.getElementById('f-cidade').value = '';
+  document.getElementById('f-periodo').value = '';
+  document.getElementById('f-busca').value = '';
+  filtroAtivo = '';
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('ativo'));
+  renderizar();
+}
+
+function atualizarDataHora() {
+  document.getElementById('data-hora').textContent =
+    new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+}
+
+// ════════════════════════════════════════════════════════════
+// MÓDULO 1 — PROXIMIDADE DE REDE (Haversine + nodes-rede.json)
+// ════════════════════════════════════════════════════════════
+
+const REDE_URL   = './data/nodes-rede.json';
+const REDE_PROX  = 150;   // metros — REDE PRÓXIMA
+const REDE_ATENC = 500;   // metros — ATENÇÃO (acima = SEM REDE)
+
+let redeNodes = null; // [{lat, lng, nome, municipio}]
+
+function haversine(lat1, lng1, lat2, lng2) {
+  const R = 6371000;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLng = (lng2 - lng1) * Math.PI / 180;
+  const a = Math.sin(dLat/2)**2 +
+            Math.cos(lat1 * Math.PI/180) * Math.cos(lat2 * Math.PI/180) * Math.sin(dLng/2)**2;
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+async function carregarRedeNodes() {
+  if (redeNodes) return redeNodes;
+  try {
+    document.getElementById('rede-loading').style.display = 'inline';
+    const r = await fetch(REDE_URL + '?t=' + Math.floor(Date.now()/3600000));
+    const d = await r.json();
+    redeNodes = d.nodes || [];
+    document.getElementById('rede-loading').style.display = 'none';
+    return redeNodes;
+  } catch(e) {
+    document.getElementById('rede-loading').style.display = 'none';
+    console.warn('Não foi possível carregar nodes-rede.json:', e.message);
+    return [];
+  }
+}
+
+function calcRedeStatus(lat, lng, nodes) {
+  if (!nodes || nodes.length === 0) return { status: 'SEM REDE', dist: null };
+  let minDist = Infinity;
+
+  // Otimização: pré-filtrar por bounding box (± 0.05° ≈ 5.5km)
+  const dlat = 0.05, dlng = 0.05;
+  const candidatos = nodes.filter(n =>
+    Math.abs(n.lat - lat) <= dlat && Math.abs(n.lng - lng) <= dlng
+  );
+  const lista = candidatos.length > 0 ? candidatos : nodes;
+
+  for (const n of lista) {
+    const d = haversine(lat, lng, n.lat, n.lng);
+    if (d < minDist) minDist = d;
+    if (minDist < REDE_PROX) break; // já achou próximo o suficiente
+  }
+
+  const dist = Math.round(minDist);
+  if (minDist <= REDE_PROX)  return { status: 'REDE PRÓXIMA', dist };
+  if (minDist <= REDE_ATENC) return { status: 'ATENÇÃO',      dist };
+  return { status: 'SEM REDE', dist };
+}
+
+async function enrichRedeStatus() {
+  const nodes = await carregarRedeNodes();
+  if (!nodes.length) return;
+
+  let atualizado = 0;
+  for (const t of allTrocas) {
+    if (!t.lat || !t.lng) continue;
+    if (t.rede_status && t.rede_status !== 'BASE_REDE_VAZIA') continue; // já tem valor real
+    const { status, dist } = calcRedeStatus(t.lat, t.lng, nodes);
+    t.rede_status  = status;
+    t.rede_dist_m  = dist;
+    atualizado++;
+  }
+  if (atualizado > 0) {
+    renderizar(); // re-renderiza com novos valores
+    toast(`🔌 Rede calculada: ${atualizado} registros atualizados`);
+  }
+}
+
+// ════════════════════════════════════════════════════════════
+// MÓDULO 2 — EDIÇÃO LOCAL (localStorage)
+// ════════════════════════════════════════════════════════════
+
+const EDITS_KEY = 'troca_edits_v1';
+
+function getEdits() {
+  try { return JSON.parse(localStorage.getItem(EDITS_KEY) || '{}'); }
+  catch(e) { return {}; }
+}
+
+function saveEdits(obj) {
+  localStorage.setItem(EDITS_KEY, JSON.stringify(obj));
+}
+
+function aplicarEdicoesSalvas() {
+  const edits = getEdits();
+  allTrocas.forEach(t => {
+    const e = edits[t.id];
+    if (!e) return;
+    if (e.status)      t.status      = e.status;
+    if (e.data_troca)  t.data_troca  = e.data_troca;
+    if (e.responsavel) t.responsavel = e.responsavel;
+    if (e.obs)         t.obs         = e.obs;
+    t._editado = true;
+  });
+}
+
+let trocaEditando = null;
+
+function abrirEdit(t) {
+  trocaEditando = t;
+  document.getElementById('edit-id-label').textContent = '#' + t.id;
+  document.getElementById('edit-status').value      = t.status || 'PENDENTE';
+  document.getElementById('edit-data').value        = t.data_troca || '';
+  document.getElementById('edit-responsavel').value = t.responsavel || '';
+  document.getElementById('edit-obs').value         = t.obs || '';
+  document.getElementById('edit-msg').textContent   = '';
+
+  // Verificar se tem foto salva
+  carregarFotoPreview(t.id);
+
+  document.getElementById('edit-panel').classList.add('aberto');
+}
+
+function fecharEdit() {
+  document.getElementById('edit-panel').classList.remove('aberto');
+  trocaEditando = null;
+}
+
+document.getElementById('btn-salvar-edit').addEventListener('click', async () => {
+  if (!trocaEditando) return;
+  const btn = document.getElementById('btn-salvar-edit');
+  btn.disabled = true; btn.textContent = '⏳ Salvando no Banco...';
+
+  const payload = {
+    status:      document.getElementById('edit-status').value,
+    data_troca:  formatarDataParaISO(document.getElementById('edit-data').value),
+    responsavel: document.getElementById('edit-responsavel').value,
+    obs:         document.getElementById('edit-obs').value,
+    updated_at:  new Date().toISOString()
+  };
+
+  try {
+    const url = `${SUPABASE_URL}/rest/v1/troca_postes_v2?id=eq.${trocaEditando.id}`;
+    const resp = await fetch(url, {
+      method: 'PATCH',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': `Bearer ${SUPABASE_KEY}`,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=representation'
+      },
+      body: JSON.stringify(payload)
+    });
+
+    if (!resp.ok) throw new Error('Erro ao salvar no banco');
+
+    toast('✅ Sincronizado com Sucesso');
+    carregarDados(); // Recarrega para garantir consistência
+    setTimeout(fecharEdit, 800);
+  } catch (e) {
+    alert('Erro ao salvar: ' + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = '💾 Salvar alterações';
+  }
+});
+
+function formatarDataParaISO(ptBrDate) {
+  if (!ptBrDate) return null;
+  const parts = ptBrDate.split('/');
+  if (parts.length === 3) return `${parts[2]}-${parts[1]}-${parts[0]}`;
+  return ptBrDate;
+}
+
+// ════════════════════════════════════════════════════════════
+// MÓDULO 3 — FOTO (IndexedDB + Canvas compress)
+// ════════════════════════════════════════════════════════════
+
+let fotoDB = null;
+
+function abrirFotoDB() {
+  return new Promise((res, rej) => {
+    if (fotoDB) { res(fotoDB); return; }
+    const req = indexedDB.open('troca_fotos', 1);
+    req.onupgradeneeded = e => e.target.result.createObjectStore('fotos');
+    req.onsuccess  = e => { fotoDB = e.target.result; res(fotoDB); };
+    req.onerror    = () => rej('IndexedDB error');
+  });
+}
+
+async function salvarFoto(trocaId, dataUrl) {
+  const db = await abrirFotoDB();
+  return new Promise((res, rej) => {
+    const tx = db.transaction('fotos', 'readwrite');
+    tx.objectStore('fotos').put(dataUrl, trocaId);
+    tx.oncomplete = res;
+    tx.onerror    = rej;
+  });
+}
+
+async function lerFoto(trocaId) {
+  const db = await abrirFotoDB();
+  return new Promise((res) => {
+    const tx = db.transaction('fotos', 'readonly');
+    const req = tx.objectStore('fotos').get(trocaId);
+    req.onsuccess = () => res(req.result || null);
+    req.onerror   = () => res(null);
+  });
+}
+
+function comprimirImagem(file, maxPx = 1024, quality = 0.72) {
+  return new Promise((res) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      URL.revokeObjectURL(url);
+      const canvas = document.getElementById('canvas-foto');
+      let w = img.width, h = img.height;
+      if (w > maxPx || h > maxPx) {
+        if (w > h) { h = Math.round(h * maxPx / w); w = maxPx; }
+        else        { w = Math.round(w * maxPx / h); h = maxPx; }
+      }
+      canvas.width = w; canvas.height = h;
+      canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+      res(canvas.toDataURL('image/jpeg', quality));
+    };
+    img.src = url;
+  });
+}
+
+async function carregarFotoPreview(trocaId) {
+  const foto = await lerFoto(trocaId);
+  const preview  = document.getElementById('foto-preview');
+  const indicator = document.getElementById('foto-indicator');
+  if (foto) {
+    preview.src = foto;
+    preview.style.display = 'block';
+    indicator.style.display = 'inline';
+  } else {
+    preview.style.display = 'none';
+    indicator.style.display = 'none';
+  }
+}
+
+document.getElementById('btn-foto').addEventListener('click', () => {
+  document.getElementById('input-foto').click();
+});
+
+document.getElementById('input-foto').addEventListener('change', async (e) => {
+  const file = e.target.files[0];
+  if (!file || !trocaEditando) return;
+  
+  const indicator = document.getElementById('foto-indicator');
+  const btn = document.getElementById('btn-foto');
+  
+  btn.disabled = true;
+  btn.textContent = '⏳ Comprimindo e Enviando...';
+
+  const dataUrl = await comprimirImagem(file);
+  
+  // Captura GPS para o upload
+  navigator.geolocation.getCurrentPosition(async (pos) => {
+    const payload = {
+      id: trocaEditando.id,
+      base64: dataUrl,
+      gps_lat: pos.coords.latitude,
+      gps_lng: pos.coords.longitude,
+      filename: `evidencia_${trocaEditando.id}.jpg`
+    };
+
+    try {
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbznKbMbMmM2XmmdCU_J39wl2z6-gAe3NUxIwKB81g42/exec';
+      await fetch(SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        body: JSON.stringify(payload)
+      });
+
+      indicator.style.display = 'inline';
+      indicator.textContent = '✅ Enviada p/ Nuvem';
+      document.getElementById('foto-preview').src = dataUrl;
+      document.getElementById('foto-preview').style.display = 'block';
+      toast('📸 Foto enviada com sucesso');
+    } catch (err) {
+      alert('Erro ao enviar foto: ' + err.message);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = '📸 Capturar Nova Foto';
+    }
+  }, () => {
+    alert('GPS necessário para validar a foto.');
+    btn.disabled = false;
+    btn.textContent = '📸 Capturar / Selecionar foto';
+  });
+  
+  e.target.value = '';
+});
+
+// ════════════════════════════════════════════════════════════
+// MÓDULO 4 — EXPORTAR CSV
+// ════════════════════════════════════════════════════════════
+
+function exportarCSV() {
+  const cols = ['id','data_troca','logradouro','numero','bairro','cidade','uf',
+                'responsavel','status','rede_status','rede_dist_m',
+                'lat','lng','obs','geo_status','dias_ate','_editado'];
+  const header = cols.join(';');
+
+  const linhas = filteredTrocas.map(t => cols.map(c => {
+    let v = t[c] !== undefined && t[c] !== null ? t[c] : '';
+    v = String(v).replace(/"/g, '""');
+    if (String(v).includes(';') || String(v).includes('\n')) v = `"${v}"`;
+    return v;
+  }).join(';'));
+
+  const csv = '\uFEFF' + header + '\n' + linhas.join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  const dt   = new Date().toISOString().slice(0, 10);
+  a.href     = url;
+  a.download = `trocas_${dt}_${filteredTrocas.length}reg.csv`;
+  a.click();
+  URL.revokeObjectURL(url);
+  toast(`📊 CSV exportado: ${filteredTrocas.length} registros`);
+}
+
+document.getElementById('btn-exportar').addEventListener('click', exportarCSV);
+
+document.getElementById('btn-pendentes').addEventListener('click', () => {
+  const pendentes = allTrocas.filter(t => !t.lat || !t.lng);
+  if (pendentes.length === 0) {
+    alert('Não há registros pendentes de coordenadas.');
+    return;
+  }
+
+  const header = 'id;logradouro;numero;bairro;cidade;uf';
+  const linhas = pendentes.map(t => 
+    `${t.id};${t.logradouro};${t.numero};${t.bairro};${t.cidade};${t.uf}`
+  );
+
+  const csv = '\uFEFF' + header + '\n' + linhas.join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `pendentes_geocoding_${pendentes.length}.csv`;
+  a.click();
+  toast(`📍 ${pendentes.length} pendentes exportados`);
+});
+
+document.getElementById('btn-rede-reload').addEventListener('click', () => {
+  redeNodes = null; // força reload
+  enrichRedeStatus();
+});
+
+// ════════════════════════════════════════════════════════════
+// UTILITÁRIOS
+// ════════════════════════════════════════════════════════════
+
+function toast(msg, dur = 2800) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), dur);
+}
+
+// ── Start ─────────────────────────────────────────────────────
+init();
+</script>
+</body>
+</html>
