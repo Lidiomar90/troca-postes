@@ -1,0 +1,22 @@
+name: Hardening Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check forbidden files
+        run: |
+          echo "Checking sensitive files..."
+          forbidden=(".env" ".clasprc.json" ".clasp.json")
+          for f in "${forbidden[@]}"; do
+            if git ls-files | grep -i "$f"; then
+              echo "Sensitive file found: $f"
+              exit 1
+            fi
+          done
