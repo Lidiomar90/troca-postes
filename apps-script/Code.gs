@@ -22,6 +22,8 @@ function onOpen() {
     .addItem('📥 Importar Telemont (aba TELEMONT)', 'importarDaTelemont')
     .addItem('✅ Marcar selecionado como EXECUTADO', 'marcarExecutado')
     .addSeparator()
+    .addItem('🏢 Abrir chamados no SIGMA', 'processarAberturaSigma')
+    .addSeparator()
     .addItem('⏰ Configurar triggers automáticos', 'configurarTriggers')
     .addItem('🗑️ Remover todos os triggers', 'removerTriggers')
     .addSeparator()
@@ -69,59 +71,53 @@ function doGet(e) {
      const data = JSON.parse(e.postData.contents);
      const action = data.action;
 
-     // ── Fluxo de Emergência 🚨 ──
-     if (action === 'emergencia') {
-       const token  = getProp(PROP.TELEGRAM_TOKEN);
-       const chatId = getProp(PROP.TELEGRAM_CHATID);
-       const mapsUrl = `https://www.google.com/maps?q=${data.lat},${data.lng}`;
-
-       const texto = [
-         `🚨 *ALERTA DE EMERGÊNCIA EM CAMPO* 🚨`,
-         ``,
-         `⚠️ *Ocorrência:* ${data.obs}`,
-         `👤 *Reportado por:* ${data.usuario}`,
-         `📍 *Localização:* [Abrir no Google Maps](${mapsUrl})`,
-         `🕒 *Hora:* ${new Date().toLocaleString('pt-BR')}`
-       ].join('\n');
-
-       // Envia texto
-       sendTelegramMessage(token, chatId, texto);
-
-       // Se tiver foto, salva no Drive e (opcional) loga
-       if (data.foto) {
-         salvarFotoNoDrive(`EMERGENCIA_${new Date().getTime()}`, data.foto, `emergencia_${new Date().getTime()}.jpg`);
+     // 1. Fluxo de Importação Automática (Outlook/PowerAutomate)
+     if (action === 'importar_outlook') {
+       const ns = data.ns;
+       if (nsJaExiste(ns)) {
+         res.message = `NS ${ns} já processada. Ignorando duplicata.`;
+         return ContentService.createTextOutput(JSON.stringify(res)).setMimeType(ContentService.MimeType.JSON);
        }
-
+       const ss = getSpreadsheet();
+       const sh = ss.getSheetByName(SHEET.TROCAS);
+       sh.appendRow([ns, data.data_prevista || new Date(), data.logradouro, data.numero || '', data.bairro || '', data.cidade || 'Belo Horizonte', 'MG', '', '', '', '', 'PENDENTE', 'Auto: Outlook']);
        res.status = 'success';
-       res.message = 'Alerta de emergência processado.';
+       res.message = `NS ${ns} importada com sucesso.`;
+       processarAberturaSigma(); 
        return ContentService.createTextOutput(JSON.stringify(res)).setMimeType(ContentService.MimeType.JSON);
      }
 
-     // ── Fluxo normal de Evidência ──
-     const id = data.id;
-     const base64 = data.base64; 
- ...
-      const fileUrl = salvarFotoNoDrive(id, base64, filename);
-      if (fileUrl) {
-        // Log do GPS nas observações ou em colunas extras se desejar
-        const gpsInfo = data.gps_lat ? ` [GPS: ${data.gps_lat.toFixed(5)}, ${data.gps_lng.toFixed(5)} | Dist: ${data.gps_distancia}m]` : '';
-        const ok = updateStatusById(id, 'EXECUTADO', fileUrl, gpsInfo);
-        if (ok) {
-          res.status = 'success';
-          res.message = `ID ${id} finalizado com evidência e GPS.`;
-          exportarParaGitHub();
-          enviarNovasTrocasParaSupabase();
-        }
-      }
-    }
-  } catch (err) {
-    res.message = err.message;
-  }
-  
-  return ContentService.createTextOutput(JSON.stringify(res))
-    .setMimeType(ContentService.MimeType.JSON);
-}
+     // 2. Fluxo de Emergência 🚨
+     if (action === 'emergencia') {
+       const token = getProp(PROP.TELEGRAM_TOKEN);
+       const chat = getProp(PROP.TELEGRAM_CHATID);
+       const mapsUrl = `https://www.google.com/maps?q=${data.lat},${data.lng}`;
+       const texto = `🚨 *ALERTA DE EMERGÊNCIA*\n\n⚠️ *Ocorrência:* ${data.obs}\n👤 *Por:* ${data.usuario}\n📍 [Google Maps](${mapsUrl})`;
+       sendTelegramMessage(token, chat, texto);
+       if (data.foto) salvarFotoNoDrive(`EMERGENCIA_${Date.now()}`, data.foto, `emergencia_${Date.now()}.jpg`);
+       res.status = 'success';
+       res.message = 'Alerta processado.';
+       return ContentService.createTextOutput(JSON.stringify(res)).setMimeType(ContentService.MimeType.JSON);
+     }
 
+     // 3. Fluxo normal de Evidência
+     const id = data.id;
+     if (id && data.base64) {
+       const fileUrl = salvarFotoNoDrive(id, data.base64, data.filename || `troca_${id}.jpg`);
+       if (fileUrl) {
+         const gpsInfo = data.gps_lat ? ` [GPS: ${data.gps_lat.toFixed(5)}, ${data.gps_lng.toFixed(5)}]` : '';
+         if (updateStatusById(id, 'EXECUTADO', fileUrl, gpsInfo)) {
+           res.status = 'success';
+           res.message = `ID ${id} finalizado.`;
+           exportarParaGitHub();
+         }
+       }
+     }
+   } catch (err) {
+     res.message = err.message;
+   }
+   return ContentService.createTextOutput(JSON.stringify(res)).setMimeType(ContentService.MimeType.JSON);
+ }
 /**
  * Salva imagem base64 no Google Drive.
  */
