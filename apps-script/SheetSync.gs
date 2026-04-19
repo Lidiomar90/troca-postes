@@ -32,6 +32,22 @@ function inicializarPlanilha() {
     Logger.log('[SheetSync] Aba TROCAS criada com cabeçalho');
   }
 
+  // ── Aba OBRAS_TERCEIROS ───────────────────────────────────
+  const shObras = getOrCreateSheet(ss, SHEET.OBRAS);
+  if (shObras.getLastRow() === 0) {
+    const headers = [
+      'ID', 'DATA_INICIO', 'DESCRICAO_OBRA', 'NUMERO', 'BAIRRO',
+      'CIDADE', 'UF', 'EMPRESA_RESPONSAVEL', 'STATUS', 'OBS',
+      'LAT', 'LNG', 'GEO_STATUS',
+      'REDE_STATUS', 'REDE_DIST_M', 'PROC_EM'
+    ];
+    shObras.getRange(1, 1, 1, headers.length).setValues([headers]);
+    shObras.getRange(1, 1, 1, headers.length)
+      .setBackground('#f2994a').setFontColor('#ffffff').setFontWeight('bold');
+    shObras.setFrozenRows(1);
+    Logger.log('[SheetSync] Aba OBRAS_TERCEIROS criada');
+  }
+
   // ── Aba CONFIG ────────────────────────────────────────────
   const shConfig = getOrCreateSheet(ss, SHEET.CONFIG);
   if (shConfig.getLastRow() === 0) {
@@ -127,12 +143,73 @@ function logExecucao(operacao, mensagem, statusStr) {
   }
 }
 
-function logAlerta(tipo, mensagem, qtde) {
-  try {
-    const ss = getSpreadsheet();
-    const sh = getOrCreateSheet(ss, SHEET.LOG_ALERTAS);
-    sh.appendRow([new Date(), tipo, mensagem, qtde || 0]);
-  } catch (e) {
-    Logger.log(`[LogAlerta] Erro ao logar: ${e.message}`);
+/**
+ * Monitora pasta de Drop e importa arquivos novos automaticamente.
+ * Configure DRIVE_FOLDER_ID nas Script Properties.
+ */
+function importarArquivosDaPastaDrop() {
+  const folderId = getProp(PROP.DRIVE_FOLDER_ID, '');
+  if (!folderId) return;
+
+  const folder = DriveApp.getFolderById(folderId);
+  const files  = folder.getFiles();
+  let count = 0;
+
+  while (files.hasNext()) {
+    const file = files.next();
+    const name = file.getName().toLowerCase();
+    
+    // Processa apenas CSV ou Excel
+    if (name.endsWith('.csv') || name.endsWith('.xlsx')) {
+      const data = parseFileData_(file);
+      if (data && data.length > 0) {
+        importarParaTrocas_(data);
+        // Move para subpasta 'PROCESSED'
+        moverParaProcessados_(folder, file);
+        count++;
+      }
+    }
   }
+  if (count > 0) {
+    Logger.log(`[DropFolder] ${count} arquivos importados.`);
+    processarTudo(); // Dispara o pipeline completo
+  }
+}
+
+function parseFileData_(file) {
+  // Simplificação: assume CSV separado por vírgula ou ponto-e-vírgula
+  const content = file.getBlob().getDataAsString();
+  const lines = content.split('\n');
+  const result = [];
+  
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split(/[;,]/);
+    if (cols.length >= 3) result.push(cols);
+  }
+  return result;
+}
+
+function importarParaTrocas_(rows) {
+  const ss = getSpreadsheet();
+  const sh = ss.getSheetByName(SHEET.TROCAS);
+  const lastRow = sh.getLastRow();
+  
+  rows.forEach((row, i) => {
+    // Mapeia colunas básicas: ID, Data, Logradouro...
+    sh.appendRow([
+      row[0] || `AUTO_${Date.now()}_${i}`, 
+      row[1] || '', 
+      row[2] || '', 
+      row[3] || '', 
+      row[4] || '', 
+      'Belo Horizonte', 'MG', '', '', '', '', 'PENDENTE'
+    ]);
+  });
+}
+
+function moverParaProcessados_(parentFolder, file) {
+  let sub;
+  const subs = parentFolder.getFoldersByName('PROCESSED');
+  sub = subs.hasNext() ? subs.next() : parentFolder.createFolder('PROCESSED');
+  file.moveTo(sub);
 }

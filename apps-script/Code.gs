@@ -61,17 +61,45 @@ function doGet(e) {
 
 /**
  * Ponto de entrada POST para upload de fotos (Evidência).
- */
-function doPost(e) {
-  const res = { status: 'error', message: 'Dados inválidos' };
-  
-  try {
-    const data = JSON.parse(e.postData.contents);
-    const id = data.id;
-    const base64 = data.base64; // Dados da imagem em base64
-    const filename = data.filename || `troca_${id}_${new Date().getTime()}.jpg`;
-    
-    if (id && base64) {
+ function doPost(e) {
+   const res = { status: 'error', message: 'Dados inválidos' };
+
+   try {
+     const data = JSON.parse(e.postData.contents);
+     const action = data.action;
+
+     // ── Fluxo de Emergência 🚨 ──
+     if (action === 'emergencia') {
+       const token  = getProp(PROP.TELEGRAM_TOKEN);
+       const chatId = getProp(PROP.TELEGRAM_CHATID);
+       const mapsUrl = `https://www.google.com/maps?q=${data.lat},${data.lng}`;
+
+       const texto = [
+         `🚨 *ALERTA DE EMERGÊNCIA EM CAMPO* 🚨`,
+         ``,
+         `⚠️ *Ocorrência:* ${data.obs}`,
+         `👤 *Reportado por:* ${data.usuario}`,
+         `📍 *Localização:* [Abrir no Google Maps](${mapsUrl})`,
+         `🕒 *Hora:* ${new Date().toLocaleString('pt-BR')}`
+       ].join('\n');
+
+       // Envia texto
+       sendTelegramMessage(token, chatId, texto);
+
+       // Se tiver foto, salva no Drive e (opcional) loga
+       if (data.foto) {
+         salvarFotoNoDrive(`EMERGENCIA_${new Date().getTime()}`, data.foto, `emergencia_${new Date().getTime()}.jpg`);
+       }
+
+       res.status = 'success';
+       res.message = 'Alerta de emergência processado.';
+       return ContentService.createTextOutput(JSON.stringify(res)).setMimeType(ContentService.MimeType.JSON);
+     }
+
+     // ── Fluxo normal de Evidência ──
+     const id = data.id;
+     const base64 = data.base64; 
+ ...
       const fileUrl = salvarFotoNoDrive(id, base64, filename);
       if (fileUrl) {
         // Log do GPS nas observações ou em colunas extras se desejar
@@ -166,42 +194,55 @@ function processarTudo() {
   logExecucao('PROCESSAR_TUDO', 'Início do pipeline', 'INICIO');
 
   try {
-    // 0. Diagnóstico rápido (loga avisos, não bloqueia)
-    const avisos = diagnosticoRapido();
-    if (avisos.length > 0) {
-      Logger.log('[Main] Avisos de configuração: ' + avisos.join('; '));
-    }
+    const ss = getSpreadsheet();
+    const shObras = ss.getSheetByName(SHEET.OBRAS);
 
-    // 1. Geocodificar
-    Logger.log('[Main] Etapa 1/4: Geocodificação');
+    // 1. Geocodificar Trocas e Obras
+    Logger.log('[Main] Etapa 1: Geocodificação');
     geocodificarTodas();
+    if (shObras) geocodificarAba_(shObras, [0,1,2,3,4,5,6]); // Adaptado para colunas da aba obras
 
     // 2. Verificar rede
-    Logger.log('[Main] Etapa 2/4: Proximidade rede');
+    Logger.log('[Main] Etapa 2: Proximidade rede');
     verificarProximidadeTodas();
+    if (shObras) verificarProximidadeAba_(shObras);
 
-    // 3. Alertas Telegram
-    Logger.log('[Main] Etapa 3/4: Alertas Telegram');
+    // 3. Alertas Telegram (Somente Trocas por enquanto)
+    Logger.log('[Main] Etapa 3: Alertas Telegram');
     verificarEEnviarAlertas();
 
-    // 4. Export JSON
-    Logger.log('[Main] Etapa 4/5: Export JSON → GitHub');
+    // 4. Export JSON + Sync
+    Logger.log('[Main] Etapa 4: Export e Sync');
     exportarParaGitHub();
-
-    // 5. Sync Supabase
-    Logger.log('[Main] Etapa 5/5: Sync Supabase');
     enviarNovasTrocasParaSupabase();
 
-    // 6. Timestamp final
     atualizarProcEm();
-
-    logExecucao('PROCESSAR_TUDO', 'Pipeline concluído com sucesso', 'OK');
-    Logger.log('[Main] === FIM processarTudo ===');
-
+    logExecucao('PROCESSAR_TUDO', 'Pipeline completo concluído', 'OK');
   } catch (e) {
     logExecucao('PROCESSAR_TUDO', `ERRO: ${e.message}`, 'ERRO');
-    Logger.log(`[Main] ERRO no pipeline: ${e.message}\n${e.stack}`);
     throw e;
+  }
+}
+
+/** Helper para processar qualquer aba de forma genérica */
+function geocodificarAba_(sh, addrCols) {
+  const data = sh.getDataRange().getValues();
+  for (let i = 1; i < data.length; i++) {
+    const row = data[i];
+    if (row[12] === 'OK') continue; // GEO_STATUS
+    geocodeRow(sh, i+1, row);
+  }
+}
+
+function verificarProximidadeAba_(sh) {
+  const shRede = getSpreadsheet().getSheetByName(SHEET.BASE_REDE);
+  if (!shRede) return;
+  const redeNodes = shRede.getRange(2, 1, shRede.getLastRow()-1, 4).getValues().filter(r => r[0] && r[1]);
+  const data = sh.getDataRange().getValues();
+  for (let i = 1; i < data.length; i++) {
+    const row = data[i];
+    if (row[13]) continue; // REDE_STATUS já preenchido
+    checkNetworkProximity(sh, i+1, row, redeNodes);
   }
 }
 
@@ -259,7 +300,6 @@ function removerTriggers() {
 // ── Trigger de edição (atualiza geocoding ao editar endereço) ─
 
 function onEdit(e) {
-  // Só reage a edições na aba TROCAS
   if (!e || !e.range) return;
   const sh = e.range.getSheet();
   if (sh.getName() !== SHEET.TROCAS) return;
@@ -268,13 +308,31 @@ function onEdit(e) {
   const row = e.range.getRow();
   if (row <= 1) return; // cabeçalho
 
-  // Se editou endereço: limpa geocoding para forçar reprocessamento
+  const newValue = e.value;
+
+  // 1. Se alterou Status para EXECUTADO: Notifica e Sincroniza
+  if (col === COL.STATUS && newValue === 'EXECUTADO') {
+    const rowData = sh.getRange(row, 1, 1, sh.getLastColumn()).getValues()[0];
+    const id = rowData[COL.ID];
+    const resp = rowData[COL.RESPONSAVEL] || 'técnico';
+    
+    // Alerta imediato no Telegram
+    const msg = `✅ *TROCA CONCLUÍDA*\n\nID: #${id}\nLocal: ${rowData[COL.LOGRADOURO]}\nResponsável: ${resp}\n🕒 ${new Date().toLocaleString('pt-BR')}`;
+    try {
+      const token = getProp(PROP.TELEGRAM_TOKEN);
+      const chat  = getProp(PROP.TELEGRAM_CHATID);
+      sendTelegramMessage(token, chat, msg);
+    } catch(err) {}
+
+    // Atualiza o site e Supabase
+    sh.getRange(row, COL.PROC_EM + 1).setValue(new Date());
+    exportarParaGitHub();
+    enviarNovasTrocasParaSupabase();
+  }
+
+  // 2. Se editou endereço: limpa geocoding para forçar reprocessamento
   const addrCols = [COL.LOGRADOURO, COL.NUMERO, COL.BAIRRO, COL.CIDADE, COL.UF, COL.CEP];
   if (addrCols.includes(col)) {
-    sh.getRange(row, COL.LAT+1).clearContent();
-    sh.getRange(row, COL.LNG+1).clearContent();
-    sh.getRange(row, COL.GEO_STATUS+1).clearContent();
-    sh.getRange(row, COL.REDE_STATUS+1).clearContent();
-    sh.getRange(row, COL.REDE_DIST_M+1).clearContent();
+    sh.getRange(row, COL.LAT+1, 1, 4).clearContent(); // limpa LAT, LNG, GEO_STATUS, REDE_STATUS
   }
 }

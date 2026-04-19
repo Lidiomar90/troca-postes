@@ -59,46 +59,58 @@ function exportarParaGitHub() {
  */
 function buildTrocasJSON() {
   const ss = getSpreadsheet();
-  const sh = ss.getSheetByName(SHEET.TROCAS);
-  if (!sh || sh.getLastRow() < 2) return JSON.stringify({ trocas: [], gerado_em: new Date() });
+  const shTrocas = ss.getSheetByName(SHEET.TROCAS);
+  const shObras = ss.getSheetByName(SHEET.OBRAS);
+  
+  const trocas = extractSheetData_(shTrocas, 'TROCA_POSTE');
+  const obras = extractSheetData_(shObras, 'OBRA_TERCEIRO');
 
-  const data = sh.getDataRange().getValues();
-  const trocas = [];
-
-  for (let i = 1; i < data.length; i++) {
-    const row = data[i];
-    if (!row[COL.ID]) continue; // linha vazia
-    trocas.push({
-      id:           String(row[COL.ID]),
-      data_troca:   fmtDate(row[COL.DATA_TROCA]),
-      logradouro:   row[COL.LOGRADOURO],
-      numero:       row[COL.NUMERO],
-      bairro:       row[COL.BAIRRO],
-      cidade:       row[COL.CIDADE],
-      uf:           row[COL.UF] || 'MG',
-      tipo_old:     row[COL.TIPO_POSTE_OLD],
-      tipo_new:     row[COL.TIPO_POSTE_NEW],
-      responsavel:  row[COL.RESPONSAVEL],
-      status:       row[COL.STATUS],
-      obs:          row[COL.OBS],
-      lat:          row[COL.LAT]       ? parseFloat(row[COL.LAT]) : null,
-      lng:          row[COL.LNG]       ? parseFloat(row[COL.LNG]) : null,
-      geo_status:   row[COL.GEO_STATUS],
-      rede_status:  row[COL.REDE_STATUS],
-      rede_dist_m:  row[COL.REDE_DIST_M] ? parseInt(row[COL.REDE_DIST_M]) : null,
-      rede_sigla:   row[COL.REDE_SIGLA]  || null,
-      foto_url:     row[COL.FOTO_URL]    || null,
-      dias_ate:     diasAte(row[COL.DATA_TROCA]),
-    });
-  }
+  const allData = [...trocas, ...obras];
 
   return JSON.stringify({
-    trocas,
+    trocas: allData,
     gerado_em: new Date().toISOString(),
-    total: trocas.length,
-    por_status: contarPorStatus(trocas),
-    por_rede: contarPorRede(trocas),
+    total: allData.length,
+    por_status: contarPorStatus(allData),
+    por_rede: contarPorRede(allData),
+    stats: {
+      trocas: trocas.length,
+      obras: obras.length
+    }
   }, null, 2);
+}
+
+function extractSheetData_(sh, tipo) {
+  if (!sh || sh.getLastRow() < 2) return [];
+  const data = sh.getDataRange().getValues();
+  const results = [];
+  
+  // Mapeamento dinâmico básico baseado no tipo
+  for (let i = 1; i < data.length; i++) {
+    const row = data[i];
+    if (!row[0]) continue;
+    
+    results.push({
+      id:           String(row[0]),
+      tipo_reg:     tipo,
+      data_troca:   fmtDate(row[1]),
+      logradouro:   row[2],
+      numero:       row[3],
+      bairro:       row[4],
+      cidade:       row[5],
+      uf:           row[6] || 'MG',
+      responsavel:  tipo === 'TROCA_POSTE' ? row[10] : row[7],
+      status:       tipo === 'TROCA_POSTE' ? row[11] : row[8],
+      obs:          tipo === 'TROCA_POSTE' ? row[12] : row[9],
+      lat:          tipo === 'TROCA_POSTE' ? (row[13] ? parseFloat(row[13]) : null) : (row[10] ? parseFloat(row[10]) : null),
+      lng:          tipo === 'TROCA_POSTE' ? (row[14] ? parseFloat(row[14]) : null) : (row[11] ? parseFloat(row[11]) : null),
+      geo_status:   tipo === 'TROCA_POSTE' ? row[15] : row[12],
+      rede_status:  tipo === 'TROCA_POSTE' ? row[16] : row[13],
+      rede_dist_m:  tipo === 'TROCA_POSTE' ? (row[17] ? parseInt(row[17]) : null) : (row[14] ? parseInt(row[14]) : null),
+      dias_ate:     diasAte(row[1]),
+    });
+  }
+  return results;
 }
 
 function contarPorStatus(trocas) {

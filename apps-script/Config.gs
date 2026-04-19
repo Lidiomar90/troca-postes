@@ -35,6 +35,7 @@ const COL = {
 // ── Nomes das abas ───────────────────────────────────────────
 const SHEET = {
   TROCAS:          'TROCAS',
+  OBRAS:           'OBRAS_TERCEIROS',
   CONFIG:          'CONFIG',
   BASE_REDE:       'BASE_REDE',
   LOG_EXECUCAO:    'LOG_EXECUCAO',

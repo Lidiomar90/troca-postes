@@ -15,8 +15,7 @@
  */
 function geocodeRow(sh, row, rowData) {
   // Já geocodificado com sucesso? Pula.
-  if (rowData[COL.GEO_STATUS] === 'OK' &&
-      rowData[COL.LAT] && rowData[COL.LNG]) {
+  if (rowData[COL.GEO_STATUS] === 'OK' && rowData[COL.LAT] && rowData[COL.LNG]) {
     return { lat: rowData[COL.LAT], lng: rowData[COL.LNG], status: 'OK' };
   }
 
@@ -26,23 +25,67 @@ function geocodeRow(sh, row, rowData) {
     return { lat: null, lng: null, status: 'SEM_ENDERECO' };
   }
 
-  // Tentativa 1: Google Maps API (nativa, sem custo em Apps Script)
+  // Uso de Cache para não gastar cota com endereços repetidos
+  const cache = CacheService.getScriptCache();
+  const cacheKey = 'geo:' + addr.toLowerCase().replace(/\s/g, '_').substring(0, 150);
+  const cached = cache.get(cacheKey);
+  
+  if (cached) {
+    const p = JSON.parse(cached);
+    setCellValue(sh, row, COL.LAT, p.lat);
+    setCellValue(sh, row, COL.LNG, p.lng);
+    setCellValue(sh, row, COL.GEO_STATUS, 'OK');
+    return { lat: p.lat, lng: p.lng, status: 'OK' };
+  }
+
+  // Tentativa 1: Google Maps
   let result = geocodeGoogleMaps(addr);
 
-  // Tentativa 2: Nominatim (fallback)
+  // Tentativa 2: Nominatim
   if (!result) result = geocodeNominatim(addr);
+
+  // Tentativa 3: Auto-Healer (Busca no histórico da planilha)
+  if (!result) result = tryHealAddress_(sh, rowData);
 
   if (result) {
     setCellValue(sh, row, COL.LAT, result.lat);
     setCellValue(sh, row, COL.LNG, result.lng);
-    setCellValue(sh, row, COL.GEO_STATUS, 'OK');
-    Logger.log(`[Geocoder] OK: "${addr}" → ${result.lat}, ${result.lng}`);
+    setCellValue(sh, row, COL.GEO_STATUS, result.healed ? 'MANUAL' : 'OK');
+    
+    // Salva no cache por 6 horas (21600 seg)
+    if (!result.healed) cache.put(cacheKey, JSON.stringify(result), 21600);
+    
     return { lat: result.lat, lng: result.lng, status: 'OK' };
   } else {
     setCellValue(sh, row, COL.GEO_STATUS, 'FALHOU');
-    Logger.log(`[Geocoder] FALHOU: "${addr}"`);
     return { lat: null, lng: null, status: 'FALHOU' };
   }
+}
+
+/**
+ * Procura endereços na mesma rua/bairro que já tenham coordenadas.
+ */
+function tryHealAddress_(sh, current) {
+  const data = sh.getDataRange().getValues();
+  const rua = String(current[COL.LOGRADOURO] || '').toLowerCase().trim();
+  const bairro = String(current[COL.BAIRRO] || '').toLowerCase().trim();
+  
+  if (!rua) return null;
+
+  for (let i = 1; i < data.length; i++) {
+    const row = data[i];
+    if (!row[COL.LAT] || !row[COL.LNG]) continue;
+    
+    const rRua = String(row[COL.LOGRADOURO]).toLowerCase().trim();
+    const rBairro = String(row[COL.BAIRRO]).toLowerCase().trim();
+    
+    // Match exato de rua e bairro? Herda.
+    if (rua === rRua && (bairro === rBairro || !bairro)) {
+      Logger.log(`[AutoHealer] ID #${current[COL.ID]} recuperado de ID #${row[COL.ID]}`);
+      return { lat: row[COL.LAT], lng: row[COL.LNG], healed: true };
+    }
+  }
+  return null;
 }
 
 /**
