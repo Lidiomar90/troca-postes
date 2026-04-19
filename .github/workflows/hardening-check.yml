@@ -11,12 +11,21 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check forbidden files
+        shell: bash
         run: |
+          set -euo pipefail
           echo "Checking sensitive files..."
-          forbidden=(".env" ".clasprc.json" ".clasp.json")
+
+          # Arquivos realmente sensíveis que não podem estar versionados
+          forbidden=(".env" ".env.local" ".env.production" ".clasprc.json")
+
           for f in "${forbidden[@]}"; do
-            if git ls-files | grep -i "$f"; then
+            if git ls-files | grep -E "(^|/)${f}$"; then
               echo "Sensitive file found: $f"
               exit 1
             fi
           done
+
+          # apps-script/.clasp.json é permitido: contém scriptId e metadados de deploy,
+          # não credenciais locais. O arquivo sensível do clasp é .clasprc.json.
+          echo "Hardening check passed."
