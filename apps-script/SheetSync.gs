@@ -207,9 +207,19 @@ function importarParaTrocas_(rows) {
   });
 }
 
-function moverParaProcessados_(parentFolder, file) {
-  let sub;
-  const subs = parentFolder.getFoldersByName('PROCESSED');
-  sub = subs.hasNext() ? subs.next() : parentFolder.createFolder('PROCESSED');
-  file.moveTo(sub);
+function realizarBackupSemanal() {
+  const ss = getSpreadsheet();
+  const folder = DriveApp.getRootFolder();
+  let backupFolder;
+  const subs = folder.getFoldersByName('BACKUP_TROCA_POSTES');
+  backupFolder = subs.hasNext() ? subs.next() : folder.createFolder('BACKUP_TROCA_POSTES');
+  
+  const abas = [SHEET.TROCAS, SHEET.OBRAS];
+  abas.forEach(aba => {
+    const sh = ss.getSheetByName(aba);
+    if (!sh) return;
+    const csv = sh.getDataRange().getValues().map(r => r.join(';')).join('\n');
+    backupFolder.createFile(`${aba}_${new Date().toISOString().slice(0,10)}.csv`, csv);
+  });
+  logExecucao('BACKUP_SEMANAL', 'Backup realizado com sucesso');
 }

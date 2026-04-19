@@ -174,3 +174,36 @@ function haversineMeters(lat1, lng1, lat2, lng2) {
           * Math.sin(dLng/2) * Math.sin(dLng/2);
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
 }
+
+// ── Módulo Risco Obras Terceiros ──────────────────────────────
+
+function verificarRiscoObras() {
+  const ss = getSpreadsheet();
+  const shObras = ss.getSheetByName(SHEET.OBRAS);
+  const shRede  = ss.getSheetByName(SHEET.BASE_REDE);
+  if (!shObras || !shRede || shObras.getLastRow() < 2) return;
+
+  const obras = shObras.getDataRange().getValues().slice(1);
+  const redeNodes = shRede.getRange(2, 1, shRede.getLastRow()-1, 4).getValues();
+  
+  obras.forEach(obra => {
+    const lat = obra[10], lng = obra[11];
+    if (!lat || !lng) return;
+
+    redeNodes.forEach(node => {
+      if (haversineMeters(lat, lng, node[0], node[1]) < 100) {
+        enviarAlertaRiscoTelegram(obra, node);
+      }
+    });
+  });
+}
+
+function enviarAlertaRiscoTelegram(obra, node) {
+  const token = getProp(PROP.TELEGRAM_TOKEN);
+  const chat  = getProp(PROP.TELEGRAM_CHATID);
+  const msg = `🚨 *ALERTA DE RISCO — OBRA PRÓXIMA* 🚨\n\n` +
+              `🏗️ *Obra:* ${obra[2]}\n` +
+              `📍 *Local:* ${obra[3]}, ${obra[4]}\n` +
+              `⚠️ *Risco:* Obra a < 100m do site ${node[2]}`;
+  sendTelegramMessage(token, chat, msg);
+}
