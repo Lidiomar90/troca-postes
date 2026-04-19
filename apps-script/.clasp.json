@@ -9,6 +9,7 @@
     "TelegramAlert.gs",
     "ExportJSON.gs",
     "Diagnostico.gs",
+    "ExecutiveReport.gs",
     "Code.gs"
   ]
 }

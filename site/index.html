@@ -3,7 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Troca de Postes — Mapa Operacional</title>
+  <title>Troca de Postes — App Operacional</title>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#0f1117">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="manifest" href="manifest.json">
 
   <!-- Leaflet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
@@ -1033,8 +1039,12 @@ function abrirDetalhe(t) {
   const mapsUrl = t.lat && t.lng
     ? `<a href="https://maps.google.com/?q=${t.lat},${t.lng}" target="_blank" style="color:var(--accent)">Abrir no Maps</a>`
     : '';
+  
+  const streetViewUrl = t.lat && t.lng 
+    ? `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${t.lat},${t.lng}`
+    : '#';
 
-  document.getElementById('det-titulo').textContent = `Troca #${t.id}`;
+  document.getElementById('det-titulo').textContent = `${t.tipo_reg === 'TROCA_POSTE' ? 'Troca' : 'Obra'} #${t.id}`;
   document.getElementById('det-corpo').innerHTML = `
     ${field('Data', t.data_troca)}
     ${field('Endereço', `${t.logradouro}, ${t.numero} — ${t.bairro}`)}
@@ -1043,15 +1053,22 @@ function abrirDetalhe(t) {
     ${field('Status', `<span class="badge badge-${t.status}">${t.status}</span>${t._editado ? ' <span style="color:#ffd54f;font-size:10px">✏️ editado</span>' : ''}`)}
     ${field('Rede', `${redeEmoji}${t.rede_status || 'N/A'} ${t.rede_dist_m ? '('+t.rede_dist_m+'m)' : ''}`)}
     ${t.obs ? field('Obs', t.obs) : ''}
-    ${t.lat ? field('Coords', `${t.lat.toFixed(5)}, ${t.lng.toFixed(5)} ${mapsUrl}`) : ''}
-    ${field('Geo', t.geo_status || '—')}
-    <div style="margin-top:12px;display:flex;gap:8px">
+    ${t.lat ? field('Coords', `${t.lat.toFixed(5)}, ${t.lng.toFixed(5)}`) : ''}
+    
+    <div style="margin-top:15px;display:grid;grid-template-columns:1fr 1fr;gap:8px">
       <button class="btn-acao azul" onclick="fecharDetalhe();abrirEdit(allTrocas.find(x=>x.id==='${t.id}'))">✏️ Editar</button>
-      ${t.lat ? `<a href="https://maps.google.com/?q=${t.lat},${t.lng}" target="_blank" class="btn-acao verde">🗺️ Maps</a>` : ''}
+      <a href="${streetViewUrl}" target="_blank" class="btn-acao azul" style="text-align:center;text-decoration:none">📷 Street View</a>
+      <a href="https://maps.google.com/?q=${t.lat},${t.lng}" target="_blank" class="btn-acao verde" style="text-align:center;text-decoration:none">🗺️ Abrir Maps</a>
+      <button class="btn-acao verde" onclick="alert('Funcionalidade de Cabos em desenvolvimento para esta região.')">🛰️ Ver Cabos</button>
     </div>
   `;
   document.getElementById('detalhe').style.display = 'block';
   document.getElementById('overlay').style.display = 'block';
+}
+
+// Registro do Service Worker (PWA)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 
 function field(label, value) {

@@ -25,6 +25,7 @@ function onOpen() {
     .addItem('⏰ Configurar triggers automáticos', 'configurarTriggers')
     .addItem('🗑️ Remover todos os triggers', 'removerTriggers')
     .addSeparator()
+    .addItem('📊 Enviar Relatório Semanal', 'enviarRelatorioExecutivoSemanal')
     .addItem('🩺 Diagnóstico completo', 'diagnosticoCompleto')
     .addToUi();
 }
