@@ -7187,7 +7187,7 @@
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "02/05/2025",
       "logradouro": "RUA ANGELO VARDIERO",
-      "numero": 0,
+      "numero": "",
       "bairro": "TERRENO Bairro: CENTRO",
       "cidade": "Vila Vardieiro",
       "uf": "MG",
@@ -7795,7 +7795,7 @@
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "08/05/2025",
       "logradouro": "FAZENDA",
-      "numero": 0,
+      "numero": "",
       "bairro": "RUA PROJETADA SN, Bairro: ANCORADO",
       "cidade": "Rosario da Limeira",
       "uf": "MG",
@@ -8498,7 +8498,7 @@
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "14/05/2025",
       "logradouro": "RUA JESUS MARQUES DE ABREU",
-      "numero": 0,
+      "numero": "",
       "bairro": "PROCESSO Bairro: SEM BAIRRO",
       "cidade": "Guarani",
       "uf": "MG",
@@ -12032,7 +12032,7 @@
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "08/06/2025",
       "logradouro": "RUA PRES CARLOS LUZ",
-      "numero": 0,
+      "numero": "",
       "bairro": "PORTAO AZUL Bairro: CENTRO",
       "cidade": "Leopoldina",
       "uf": "MG",
@@ -48014,6 +48014,25 @@
       "dias_ate": -16
     },
     {
+      "id": "AUTO_TROCA_POSTE_2528",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
       "id": "051-2026",
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "07/04/2026",
@@ -52105,7 +52124,7 @@
       "logradouro": "ÁREA RURAL",
       "numero": "",
       "bairro": "FAZENDA MOSQUITO",
-      "cidade": "",
+      "cidade": "Belo Horizonte",
       "uf": "MG",
       "responsavel": "",
       "status": "PENDENTE",
@@ -52348,7 +52367,7 @@
     {
       "id": "1247944079",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "07/09./026",
+      "data_troca": "07/09/2026",
       "logradouro": "RUA DONA CANDIDA N°",
       "numero": 80,
       "bairro": "NOVO HORIZONTE",
@@ -52362,7 +52381,7 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -36388
+      "dias_ate": 137
     },
     {
       "id": "1246238671",
@@ -52481,7 +52500,7 @@
     {
       "id": "4461929/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Abílio Taváres Píres",
       "numero": 36,
       "bairro": "Centenário",
@@ -52500,7 +52519,7 @@
     {
       "id": "4461379/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Cleto da Rocha",
       "numero": 31,
       "bairro": "Centro",
@@ -52519,7 +52538,7 @@
     {
       "id": "4459456/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua José Péres",
       "numero": 224,
       "bairro": "Centro",
@@ -52538,7 +52557,7 @@
     {
       "id": "4461372/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Joaquim Augusto de Almeida",
       "numero": 157,
       "bairro": "Centro 36774, 016",
@@ -52557,7 +52576,7 @@
     {
       "id": "4461386/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Joaquim Augusto de Almeida",
       "numero": 155,
       "bairro": "Vila Domingos Lopes  36774, 016",
@@ -52576,7 +52595,7 @@
     {
       "id": "4466571/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Odomar de Souza",
       "numero": 111,
       "bairro": "São Pedro",
@@ -52595,7 +52614,7 @@
     {
       "id": "4466985/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 840,
       "bairro": "Santa Clara 36771, 416",
@@ -52614,7 +52633,7 @@
     {
       "id": "4466968/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 175,
       "bairro": "Santa Clara 36771, 416",
@@ -52633,7 +52652,7 @@
     {
       "id": "4466971/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 360,
       "bairro": "Santa Clara 36771, 416",
@@ -52652,7 +52671,7 @@
     {
       "id": "4466991/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rus Sete",
       "numero": 664,
       "bairro": "Santa Clara 36771, 000",
@@ -52671,7 +52690,7 @@
     {
       "id": "4466974/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 460,
       "bairro": "Santa Clara 36771, 416",
@@ -52690,7 +52709,7 @@
     {
       "id": "4466977/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 545,
       "bairro": "Santa Clara 36771, 416",
@@ -52709,7 +52728,7 @@
     {
       "id": "4466973/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 415,
       "bairro": "Santa Clara 36771, 416",
@@ -52728,7 +52747,7 @@
     {
       "id": "4466976/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 530,
       "bairro": "Santa Clara 36771, 416",
@@ -52747,7 +52766,7 @@
     {
       "id": "4466970/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 315,
       "bairro": "Santa Clara 36771, 416",
@@ -52766,7 +52785,7 @@
     {
       "id": "4466990/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rus Sete",
       "numero": 794,
       "bairro": "Santa Clara  36771, 000",
@@ -52785,7 +52804,7 @@
     {
       "id": "4466993/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rus Sete",
       "numero": "615a",
       "bairro": "Santa Clara  36771, 000",
@@ -52804,7 +52823,7 @@
     {
       "id": "4466979/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 630,
       "bairro": "Santa Clara 36771, 416",
@@ -52823,7 +52842,7 @@
     {
       "id": "4466982/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 720,
       "bairro": "Santa Clara 36771, 416",
@@ -52842,7 +52861,7 @@
     {
       "id": "4466975/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua José Simeão",
       "numero": 232,
       "bairro": "Santa Clara",
@@ -52861,7 +52880,7 @@
     {
       "id": "4466978/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 590,
       "bairro": "Santa Clara 36771, 416",
@@ -52880,7 +52899,7 @@
     {
       "id": "4466984/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 810,
       "bairro": "Santa Clara 36771, 416",
@@ -52899,7 +52918,7 @@
     {
       "id": "4466987/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Milton Ventura Marinho",
       "numero": 705,
       "bairro": "Santa Clara",
@@ -52918,7 +52937,7 @@
     {
       "id": "4466981/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Sebastião Machado Araújo",
       "numero": 740,
       "bairro": "Santa Clara 36771, 416",
@@ -52937,7 +52956,7 @@
     {
       "id": "4384878/2025",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "2026-04-31",
+      "data_troca": "30/04/2026",
       "logradouro": "Rua Doutor Lidio B de Melo",
       "numero": 691,
       "bairro": "NI",
@@ -52952,6 +52971,25 @@
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
       "dias_ate": 7
+    },
+    {
+      "id": "AUTO_TROCA_POSTE_2789",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
     },
     {
       "id": "1236567786",
@@ -54645,9 +54683,104 @@
       "dias_ate": -4
     },
     {
+      "id": "AUTO_TROCA_POSTE_2879",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
+      "id": "AUTO_TROCA_POSTE_2880",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
+      "id": "AUTO_TROCA_POSTE_2881",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
+      "id": "AUTO_TROCA_POSTE_2882",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
+      "id": "AUTO_TROCA_POSTE_2883",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "07/04/2026",
+      "logradouro": "RUA ADENI TOMAZ",
+      "numero": "",
+      "bairro": "SAO SEBASTIAO 32510100",
+      "cidade": "Igarape",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 645715",
+      "lat": -19.8872672,
+      "lng": -44.0121779,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": -16
+    },
+    {
       "id": "Fri Apr 12 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "Emergencial",
+      "data_troca": "",
       "logradouro": "2024-04-12T07:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54666,7 +54799,7 @@
     {
       "id": "Thu Jul 11 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "Emergencial",
+      "data_troca": "",
       "logradouro": "2024-07-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54685,7 +54818,7 @@
     {
       "id": "Wed Aug 21 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-08-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54699,12 +54832,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Fri Aug 23 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-08-30T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54718,12 +54851,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed Aug 28 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-08-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54737,12 +54870,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 16 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-21T07:00:00.000Z",
       "numero": 5,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -54756,12 +54889,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 09 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54775,12 +54908,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sat Mar 09 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54794,12 +54927,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 09 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54813,12 +54946,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Aug 08 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54832,12 +54965,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Aug 22 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54851,12 +54984,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Tue Aug 27 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54870,12 +55003,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Aug 29 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54889,12 +55022,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sun Sep 08 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54908,12 +55041,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Fri Sep 13 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54927,12 +55060,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sun Dec 08 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-09-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54946,12 +55079,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sat Nov 09 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-20T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -54965,12 +55098,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Oct 21 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-21T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -54984,12 +55117,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 24 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-24T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55003,12 +55136,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Sun Nov 10 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-24T07:00:00.000Z",
       "numero": 8,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -55022,12 +55155,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Aug 30 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55041,12 +55174,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Oct 16 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-25T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T16:00:00.000Z",
@@ -55060,12 +55193,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed May 08 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55079,12 +55212,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Aug 14 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-10-30T07:00:00.000Z",
       "numero": 3,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55098,12 +55231,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Oct 31 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "Emergencial",
+      "data_troca": "",
       "logradouro": "2024-10-31T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55122,7 +55255,7 @@
     {
       "id": "Sun Jun 09 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-19T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55136,12 +55269,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 09 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-20T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55155,12 +55288,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Nov 21 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "Emergencial",
+      "data_troca": "",
       "logradouro": "2024-11-21T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55179,7 +55312,7 @@
     {
       "id": "Wed Oct 23 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-22T08:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55193,12 +55326,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 08 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-23T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55212,12 +55345,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 23 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-26T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55231,12 +55364,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Sep 18 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-11-30T08:00:00.000Z",
       "numero": 14,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55250,12 +55383,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 09 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-11T08:00:00.000Z",
       "numero": 13,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55269,12 +55402,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Jul 08 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-13T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55288,12 +55421,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Sep 26 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-21T08:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55307,12 +55440,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 23 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-23T08:00:00.000Z",
       "numero": 3,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55326,12 +55459,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 17 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55345,12 +55478,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 23 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-31T08:00:00.000Z",
       "numero": 7,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55364,12 +55497,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 10 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2024-12-31T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55383,12 +55516,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Nov 14 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55402,12 +55535,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Nov 22 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55421,12 +55554,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Dec 09 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55440,12 +55573,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 10 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55459,12 +55592,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Nov 07 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55478,12 +55611,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 24 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-07T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55497,12 +55630,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Oct 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-10T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55516,12 +55649,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Dec 30 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-11T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55535,12 +55668,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 08 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-13T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -55554,12 +55687,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Oct 20 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55573,12 +55706,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Oct 21 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-15T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55592,12 +55725,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Fri Nov 29 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-18T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55611,12 +55744,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Oct 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-22T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55630,12 +55763,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Jun 11 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55649,12 +55782,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 28 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55668,12 +55801,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 21 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-26T08:00:00.000Z",
       "numero": 13,
       "bairro": "1899-12-30T16:30:00.000Z",
@@ -55687,12 +55820,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 22 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:00:00.000Z",
@@ -55706,12 +55839,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Sun Dec 28 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-01-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55725,12 +55858,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Jul 01 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55744,12 +55877,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri May 23 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55763,12 +55896,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon May 05 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55782,12 +55915,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 10 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-06T08:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T20:00:00.000Z",
@@ -55801,12 +55934,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Jan 16 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -55820,12 +55953,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Sun May 18 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "10/03/1970",
+      "data_troca": "",
       "logradouro": "2025-02-07T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -55839,12 +55972,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20498
+      "dias_ate": null
     },
     {
       "id": "Fri Oct 10 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-07T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55858,12 +55991,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Jul 26 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-11T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55877,12 +56010,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Nov 17 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55896,12 +56029,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Dec 02 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55915,12 +56048,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 10 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-13T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -55934,12 +56067,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Feb 26 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-13T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55953,12 +56086,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Nov 19 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -55972,12 +56105,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Sun Mar 02 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -55991,12 +56124,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed Nov 19 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56010,12 +56143,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 20 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-18T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56029,12 +56162,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 17 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-18T08:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -56048,12 +56181,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Feb 18 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-01589/2025",
+      "data_troca": "",
       "logradouro": "2025-02-18T08:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -56072,7 +56205,7 @@
     {
       "id": "Tue Feb 11 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-19T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -56086,12 +56219,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Nov 26 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-22T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56105,12 +56238,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Jun 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56124,12 +56257,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Oct 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-25T08:00:00.000Z",
       "numero": 9,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -56143,12 +56276,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 02 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-26T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56162,12 +56295,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Nov 27 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-27T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56181,12 +56314,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Feb 12 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-27T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -56200,12 +56333,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Jul 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-02-27T08:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -56219,12 +56352,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sun Mar 10 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-01T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56238,12 +56371,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Oct 18 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-01T08:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56257,12 +56390,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Feb 27 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "CEMIG - EMAIL",
+      "data_troca": "",
       "logradouro": "2025-03-05T08:00:00.000Z",
       "numero": 13,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56281,7 +56414,7 @@
     {
       "id": "Thu Mar 06 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-05T08:00:00.000Z",
       "numero": 4,
       "bairro": "",
@@ -56295,12 +56428,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 21 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-09T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56314,12 +56447,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 07 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-10T07:00:00.000Z",
       "numero": 3,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -56333,12 +56466,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 10 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-02095/2025",
+      "data_troca": "",
       "logradouro": "2025-03-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56357,7 +56490,7 @@
     {
       "id": "Thu Oct 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-01800/2025",
+      "data_troca": "",
       "logradouro": "2025-03-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56376,7 +56509,7 @@
     {
       "id": "Thu Mar 13 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-13T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T20:00:00.000Z",
@@ -56390,12 +56523,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-13T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56409,12 +56542,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 21 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-14T07:00:00.000Z",
       "numero": 5,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -56428,12 +56561,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Mar 27 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56447,12 +56580,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 30 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-18T07:00:00.000Z",
       "numero": 26,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56466,12 +56599,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Dec 26 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-18T07:00:00.000Z",
       "numero": 5,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56485,12 +56618,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Dec 12 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-21T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56504,12 +56637,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 18 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-21T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -56523,12 +56656,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 31 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-21T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56542,12 +56675,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 14 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-22T07:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -56561,12 +56694,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56580,12 +56713,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56599,12 +56732,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-03-26T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:30:00.000Z",
@@ -56618,12 +56751,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Oct 29 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-01T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56637,12 +56770,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56656,12 +56789,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 17 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-02T07:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -56675,12 +56808,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Apr 03 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-03080/2025",
+      "data_troca": "",
       "logradouro": "2025-04-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56699,7 +56832,7 @@
     {
       "id": "Mon May 19 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:30:00.000Z",
@@ -56713,12 +56846,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 01 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56732,12 +56865,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Apr 10 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56751,12 +56884,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Apr 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56770,12 +56903,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Apr 04 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56789,12 +56922,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56808,12 +56941,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 05 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-08T07:00:00.000Z",
       "numero": 4,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56827,12 +56960,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 23 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-09T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:30:00.000Z",
@@ -56846,12 +56979,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Apr 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56865,12 +56998,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 07 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56884,12 +57017,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56903,12 +57036,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Jul 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -56922,12 +57055,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-03559/2025",
+      "data_troca": "",
       "logradouro": "2025-04-14T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:00:00.000Z",
@@ -56946,7 +57079,7 @@
     {
       "id": "Wed Jan 29 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-15T07:00:00.000Z",
       "numero": 5,
       "bairro": "",
@@ -56960,12 +57093,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 27 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-16T07:00:00.000Z",
       "numero": 4,
       "bairro": "",
@@ -56979,12 +57112,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -56998,12 +57131,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57017,12 +57150,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57036,12 +57169,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu May 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57055,12 +57188,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri May 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-22T07:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -57074,12 +57207,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 31 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-25T07:00:00.000Z",
       "numero": 8,
       "bairro": "",
@@ -57093,12 +57226,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 19 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57112,12 +57245,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 28 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:30:00.000Z",
@@ -57131,12 +57264,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri May 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57150,12 +57283,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Apr 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-28T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T21:00:00.000Z",
@@ -57169,12 +57302,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57188,12 +57321,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Apr 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57207,12 +57340,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed May 21 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:30:00.000Z",
@@ -57226,12 +57359,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue May 20 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-04-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T16:30:00.000Z",
@@ -57245,12 +57378,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu Aug 01 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -57264,12 +57397,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed May 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57283,12 +57416,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu May 15 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-04T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57302,12 +57435,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue May 06 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-06T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57321,12 +57454,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed May 07 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -57340,12 +57473,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Aug 20 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57359,12 +57492,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon May 12 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:30:00.000Z",
@@ -57378,12 +57511,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Aug 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57397,12 +57530,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Apr 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:30:00.000Z",
@@ -57416,12 +57549,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Jun 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57435,12 +57568,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri May 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-04478/2025",
+      "data_troca": "",
       "logradouro": "2025-05-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57459,7 +57592,7 @@
     {
       "id": "Mon May 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57473,12 +57606,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 14 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57492,12 +57625,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57511,12 +57644,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 16 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -57530,12 +57663,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 15 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-18T07:00:00.000Z",
       "numero": 5,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -57549,12 +57682,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed May 28 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T22:00:00.000Z",
@@ -57568,12 +57701,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Thu May 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-19T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -57587,12 +57720,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 12 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-20T07:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -57606,12 +57739,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 23 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-21T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57625,12 +57758,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Jun 05 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-24T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57644,12 +57777,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Jun 10 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57663,12 +57796,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57682,12 +57815,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu May 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-04903/2025",
+      "data_troca": "",
       "logradouro": "2025-05-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57706,7 +57839,7 @@
     {
       "id": "Wed Jun 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57720,12 +57853,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Jun 13 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-05-31T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57739,12 +57872,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Mon Jun 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57758,12 +57891,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue May 27 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-03T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -57777,12 +57910,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Jun 04 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-04945/2025",
+      "data_troca": "",
       "logradouro": "2025-06-04T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57801,7 +57934,7 @@
     {
       "id": "Fri May 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -57815,12 +57948,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Jun 18 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-06T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57834,12 +57967,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Jun 20 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-06T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57853,12 +57986,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Mon Jul 22 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T22:00:00.000Z",
@@ -57872,12 +58005,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Oct 15 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57891,12 +58024,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Jun 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/RA-05182/2025",
+      "data_troca": "",
       "logradouro": "2025-06-09T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57915,7 +58048,7 @@
     {
       "id": "Fri Jun 06 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "10/03/1970",
+      "data_troca": "",
       "logradouro": "2025-06-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -57929,12 +58062,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20498
+      "dias_ate": null
     },
     {
       "id": "Tue Jun 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57948,12 +58081,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu Jun 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-14T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57967,12 +58100,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu Jun 12 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -57986,12 +58119,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Jun 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58005,12 +58138,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Mon Jun 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-19T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58024,12 +58157,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Tue Aug 19 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-06-26T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58043,12 +58176,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Thu Nov 28 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-02T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -58062,12 +58195,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Jul 12 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -58081,12 +58214,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Jul 03 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-05860/2025",
+      "data_troca": "",
       "logradouro": "2025-07-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58105,7 +58238,7 @@
     {
       "id": "Fri Jul 04 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-05851/2025",
+      "data_troca": "",
       "logradouro": "2025-07-04T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58124,7 +58257,7 @@
     {
       "id": "Mon Jul 07 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-05912/2025",
+      "data_troca": "",
       "logradouro": "2025-07-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58143,7 +58276,7 @@
     {
       "id": "Tue Jul 30 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-08T07:00:00.000Z",
       "numero": 9,
       "bairro": "1899-12-30T15:00:00.000Z",
@@ -58157,12 +58290,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -58176,12 +58309,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00010/2025",
+      "data_troca": "",
       "logradouro": "2025-07-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58200,7 +58333,7 @@
     {
       "id": "Wed Jul 23 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58214,12 +58347,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Feb 01 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-10T07:00:00.000Z",
       "numero": 6,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -58233,12 +58366,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Jul 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58252,12 +58385,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Jul 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -58271,12 +58404,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 15 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06179/2025",
+      "data_troca": "",
       "logradouro": "2025-07-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58295,7 +58428,7 @@
     {
       "id": "Wed Jul 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00053/2025",
+      "data_troca": "",
       "logradouro": "2025-07-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58314,7 +58447,7 @@
     {
       "id": "Sat Jul 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58328,12 +58461,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Jul 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00060/2025",
+      "data_troca": "",
       "logradouro": "2025-07-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58352,7 +58485,7 @@
     {
       "id": "Fri Jul 18 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06354/2025",
+      "data_troca": "",
       "logradouro": "2025-07-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58371,7 +58504,7 @@
     {
       "id": "Mon Jul 21 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "02/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -58385,12 +58518,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20565
+      "dias_ate": null
     },
     {
       "id": "Wed Jul 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "16/02/1970",
+      "data_troca": "",
       "logradouro": "2025-07-20T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T20:30:00.000Z",
@@ -58404,12 +58537,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20520
+      "dias_ate": null
     },
     {
       "id": "Tue Jul 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06438/2025",
+      "data_troca": "",
       "logradouro": "2025-07-22T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58428,7 +58561,7 @@
     {
       "id": "Thu Jul 31 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58442,12 +58575,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Thu Jul 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06499/2025",
+      "data_troca": "",
       "logradouro": "2025-07-24T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58466,7 +58599,7 @@
     {
       "id": "Fri Jul 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06504/2025",
+      "data_troca": "",
       "logradouro": "2025-07-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58485,7 +58618,7 @@
     {
       "id": "Mon Jul 28 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06550/2025",
+      "data_troca": "",
       "logradouro": "2025-07-28T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58504,7 +58637,7 @@
     {
       "id": "Tue Jul 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06634/2025",
+      "data_troca": "",
       "logradouro": "2025-07-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58523,7 +58656,7 @@
     {
       "id": "Fri Aug 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58537,12 +58670,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Mon Aug 04 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-07-31T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58556,12 +58689,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Tue May 13 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58575,12 +58708,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Sep 18 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58594,12 +58727,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Aug 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58613,12 +58746,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 15 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58632,12 +58765,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Aug 05 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06907/2025",
+      "data_troca": "",
       "logradouro": "2025-08-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58656,7 +58789,7 @@
     {
       "id": "Wed Aug 06 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06915/2025",
+      "data_troca": "",
       "logradouro": "2025-08-06T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58675,7 +58808,7 @@
     {
       "id": "Thu Aug 07 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06958/2025",
+      "data_troca": "",
       "logradouro": "2025-08-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58694,7 +58827,7 @@
     {
       "id": "Fri Aug 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-06988/2025",
+      "data_troca": "",
       "logradouro": "2025-08-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58713,7 +58846,7 @@
     {
       "id": "Mon Sep 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07886/2025",
+      "data_troca": "",
       "logradouro": "2025-08-09T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58732,7 +58865,7 @@
     {
       "id": "Wed Oct 30 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-11T07:00:00.000Z",
       "numero": 5,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -58746,12 +58879,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Aug 12 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07075/2025",
+      "data_troca": "",
       "logradouro": "2025-08-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58770,7 +58903,7 @@
     {
       "id": "Wed Aug 13 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07104/2025",
+      "data_troca": "",
       "logradouro": "2025-08-13T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58789,7 +58922,7 @@
     {
       "id": "Thu Aug 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07169/2025",
+      "data_troca": "",
       "logradouro": "2025-08-14T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58808,7 +58941,7 @@
     {
       "id": "Thu Aug 21 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58822,12 +58955,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Aug 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-20T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58841,12 +58974,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Aug 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07427/2025",
+      "data_troca": "",
       "logradouro": "2025-08-22T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58865,7 +58998,7 @@
     {
       "id": "Mon Aug 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07477/2025",
+      "data_troca": "",
       "logradouro": "2025-08-25T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58884,7 +59017,7 @@
     {
       "id": "Tue Aug 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07533/2025",
+      "data_troca": "",
       "logradouro": "2025-08-26T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58903,7 +59036,7 @@
     {
       "id": "Wed Aug 27 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07514/2025",
+      "data_troca": "",
       "logradouro": "2025-08-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58922,7 +59055,7 @@
     {
       "id": "Thu Aug 28 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07578/2025",
+      "data_troca": "",
       "logradouro": "2025-08-28T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58941,7 +59074,7 @@
     {
       "id": "Thu Sep 04 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58955,12 +59088,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Thu Sep 11 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-08-29T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -58974,12 +59107,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Mon Oct 14 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-01T07:00:00.000Z",
       "numero": 2,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -58993,12 +59126,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07721/2025",
+      "data_troca": "",
       "logradouro": "2025-09-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59017,7 +59150,7 @@
     {
       "id": "Fri Sep 05 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59031,12 +59164,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 27 2024 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -59050,12 +59183,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 02 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07752/2025",
+      "data_troca": "",
       "logradouro": "2025-09-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59074,7 +59207,7 @@
     {
       "id": "Wed Sep 03 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-07759/2025",
+      "data_troca": "",
       "logradouro": "2025-09-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59093,7 +59226,7 @@
     {
       "id": "Thu Jan 30 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-04T07:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -59107,12 +59240,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 09 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-04T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59126,12 +59259,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Wed Sep 10 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-06T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59145,12 +59278,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59164,12 +59297,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Fri Sep 12 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08064/2025",
+      "data_troca": "",
       "logradouro": "2025-09-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59188,7 +59321,7 @@
     {
       "id": "Mon Sep 15 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08097/2025",
+      "data_troca": "",
       "logradouro": "2025-09-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59207,7 +59340,7 @@
     {
       "id": "Mon Sep 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-15T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59221,12 +59354,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Oct 06 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59240,12 +59373,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Wed Sep 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08187/2025",
+      "data_troca": "",
       "logradouro": "2025-09-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59264,7 +59397,7 @@
     {
       "id": "Mon Oct 13 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59278,12 +59411,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Sep 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-20T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59297,12 +59430,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Mon Sep 22 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08331/2025",
+      "data_troca": "",
       "logradouro": "2025-09-22T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59321,7 +59454,7 @@
     {
       "id": "Sat May 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "10/03/1970",
+      "data_troca": "",
       "logradouro": "2025-09-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T20:00:00.000Z",
@@ -59335,12 +59468,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20498
+      "dias_ate": null
     },
     {
       "id": "Fri Sep 19 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59354,12 +59487,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 23 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08438/2025",
+      "data_troca": "",
       "logradouro": "2025-09-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59378,7 +59511,7 @@
     {
       "id": "Thu Sep 25 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59392,12 +59525,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Tue Sep 30 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-28T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59411,12 +59544,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Wed Oct 09 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-09-30T07:00:00.000Z",
       "numero": 7,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -59430,12 +59563,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed Oct 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59449,12 +59582,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Sep 26 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59468,12 +59601,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Oct 03 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08806/2025",
+      "data_troca": "",
       "logradouro": "2025-10-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59492,7 +59625,7 @@
     {
       "id": "Wed Oct 08 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59506,12 +59639,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Tue Oct 07 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-08880/2025",
+      "data_troca": "",
       "logradouro": "2025-10-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59530,7 +59663,7 @@
     {
       "id": "Fri Oct 24 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-09T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59544,12 +59677,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Sep 27 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T17:00:00.000Z",
@@ -59563,12 +59696,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Oct 17 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59582,12 +59715,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Thu Oct 16 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59601,12 +59734,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Tue Oct 14 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-14T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59620,12 +59753,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Tue Oct 28 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-20T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59639,12 +59772,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Thu Oct 23 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "27/01/1970",
+      "data_troca": "",
       "logradouro": "2025-10-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59658,12 +59791,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20540
+      "dias_ate": null
     },
     {
       "id": "Mon Oct 27 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": " ER/EE-09557/2025",
+      "data_troca": "",
       "logradouro": "2025-10-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "17:21 ",
@@ -59682,7 +59815,7 @@
     {
       "id": "Wed Oct 29 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-09589/2025",
+      "data_troca": "",
       "logradouro": "2025-10-28T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59701,7 +59834,7 @@
     {
       "id": "Fri Oct 31 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-01T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59715,12 +59848,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Nov 03 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59734,12 +59867,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Nov 05 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-09858/2025",
+      "data_troca": "",
       "logradouro": "2025-11-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59758,7 +59891,7 @@
     {
       "id": "Thu Nov 06 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-09853/2025",
+      "data_troca": "",
       "logradouro": "2025-11-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59777,7 +59910,7 @@
     {
       "id": "Mon Nov 10 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-10039/2025",
+      "data_troca": "",
       "logradouro": "2025-11-10T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59796,7 +59929,7 @@
     {
       "id": "Tue Nov 11 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00397/2025",
+      "data_troca": "",
       "logradouro": "2025-11-11T22:36:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59815,7 +59948,7 @@
     {
       "id": "Wed Nov 12 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-10107/2025",
+      "data_troca": "",
       "logradouro": "2025-11-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59834,7 +59967,7 @@
     {
       "id": "Thu Nov 13 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59848,12 +59981,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Fri Nov 14 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-17T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59867,12 +60000,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Nov 18 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-20T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T19:00:00.000Z",
@@ -59886,12 +60019,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Nov 24 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-10422/2025",
+      "data_troca": "",
       "logradouro": "2025-11-24T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59910,7 +60043,7 @@
     {
       "id": "Fri Nov 21 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-11-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -59924,12 +60057,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Nov 25 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-10485/2025",
+      "data_troca": "",
       "logradouro": "2025-11-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59948,7 +60081,7 @@
     {
       "id": "Fri Nov 28 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-10586/2025",
+      "data_troca": "",
       "logradouro": "2025-11-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59967,7 +60100,7 @@
     {
       "id": "Tue Nov 04 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-01T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -59981,12 +60114,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 01 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-01T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60000,12 +60133,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Nov 20 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60019,12 +60152,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Dec 03 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00681/2025",
+      "data_troca": "",
       "logradouro": "2025-12-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60043,7 +60176,7 @@
     {
       "id": "Tue Dec 23 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "28/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60057,12 +60190,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20539
+      "dias_ate": null
     },
     {
       "id": "Thu Dec 04 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00667/2025",
+      "data_troca": "",
       "logradouro": "2025-12-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60081,7 +60214,7 @@
     {
       "id": "Tue Oct 01 2024 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T18:00:00.000Z",
@@ -60095,12 +60228,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Sat Nov 01 2025 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60114,12 +60247,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 05 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60133,12 +60266,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 08 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-09T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60152,12 +60285,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Nov 26 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-10T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60171,12 +60304,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Nov 27 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "1899-12-30T20:00:00.000Z",
@@ -60190,12 +60323,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 19 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60209,12 +60342,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 12 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-15T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60228,12 +60361,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 15 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-16T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60247,12 +60380,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 26 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00058/2025",
+      "data_troca": "",
       "logradouro": "2025-12-17T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60271,7 +60404,7 @@
     {
       "id": "Sat Nov 29 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-18T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60285,12 +60418,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Dec 11 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-19T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60304,12 +60437,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Dec 17 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-22T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60323,12 +60456,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Dec 06 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-23T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60342,12 +60475,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Dec 24 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2025-12-29T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60361,12 +60494,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 16 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60380,12 +60513,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 20 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-04T08:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -60399,12 +60532,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 16 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60418,12 +60551,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 23 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60437,12 +60570,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Dec 10 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60456,12 +60589,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 29 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60475,12 +60608,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Dec 31 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60494,12 +60627,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Dec 19 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "28/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60513,12 +60646,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20539
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 07 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00025/2026",
+      "data_troca": "",
       "logradouro": "2026-01-07T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60537,7 +60670,7 @@
     {
       "id": "Thu Jan 08 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-09T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60551,12 +60684,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Dec 16 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-11T08:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -60570,12 +60703,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Dec 22 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-11T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60589,12 +60722,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 12 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00043/2026",
+      "data_troca": "",
       "logradouro": "2026-01-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60613,7 +60746,7 @@
     {
       "id": "Fri Jan 09 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-12T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60627,12 +60760,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 05 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-13T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60646,12 +60779,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Thu Jan 15 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00939/2025",
+      "data_troca": "",
       "logradouro": "2026-01-14T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60670,7 +60803,7 @@
     {
       "id": "Wed Jan 14 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-15T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60684,12 +60817,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 13 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-16T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60703,12 +60836,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Dec 18 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "31/12/1969",
+      "data_troca": "",
       "logradouro": "2026-01-19T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60722,12 +60855,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20567
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 21 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00084/2026",
+      "data_troca": "",
       "logradouro": "2026-01-21T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60746,7 +60879,7 @@
     {
       "id": "Fri Jan 23 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00091/2026",
+      "data_troca": "",
       "logradouro": "2026-01-23T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60765,7 +60898,7 @@
     {
       "id": "Tue Jan 06 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-25T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60779,12 +60912,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Jan 26 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60798,12 +60931,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 27 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60817,12 +60950,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 13 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-01-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60836,12 +60969,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Jan 30 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60855,12 +60988,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Jan 20 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60874,12 +61007,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Jan 29 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60893,12 +61026,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Jan 28 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60912,12 +61045,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 02 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60931,12 +61064,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Feb 03 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00124/2026",
+      "data_troca": "",
       "logradouro": "2026-02-04T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60955,7 +61088,7 @@
     {
       "id": "Fri Feb 06 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -60969,12 +61102,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Feb 19 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00979/2025-",
+      "data_troca": "",
       "logradouro": "2026-02-09T08:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -60993,7 +61126,7 @@
     {
       "id": "Wed Feb 04 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-13T08:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -61007,12 +61140,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 09 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-13T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61026,12 +61159,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Wed Feb 11 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-17T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61045,12 +61178,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 09 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-18T08:00:00.000Z",
       "numero": 4,
       "bairro": "",
@@ -61064,12 +61197,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Thu Feb 20 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-01051/2025",
+      "data_troca": "",
       "logradouro": "2026-02-20T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61088,7 +61221,7 @@
     {
       "id": "Thu Feb 05 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00145/2026",
+      "data_troca": "",
       "logradouro": "2026-02-20T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61107,7 +61240,7 @@
     {
       "id": "Tue Feb 10 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-20T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61121,12 +61254,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Feb 16 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-21T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61140,12 +61273,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Feb 24 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00016/2026-EE",
+      "data_troca": "",
       "logradouro": "2026-02-24T08:00:00.000Z",
       "numero": 300,
       "bairro": "",
@@ -61164,7 +61297,7 @@
     {
       "id": "Thu Feb 26 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-27T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61178,12 +61311,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Feb 12 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-02-28T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61197,12 +61330,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Feb 18 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-02T08:00:00.000Z",
       "numero": 1,
       "bairro": "12:00 às 17:00",
@@ -61216,12 +61349,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 02 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-03T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61235,12 +61368,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Wed Feb 25 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-05T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61254,12 +61387,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Sat Feb 07 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61273,12 +61406,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Feb 27 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61292,12 +61425,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Thu Mar 05 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-06T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61311,12 +61444,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 06 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-09T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61330,12 +61463,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 24 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61349,12 +61482,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Jan 22 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-11T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61368,12 +61501,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Feb 14 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61387,12 +61520,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Feb 28 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-13T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61406,12 +61539,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 04 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-15T07:00:00.000Z",
       "numero": 3,
       "bairro": "",
@@ -61425,12 +61558,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 13 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61444,12 +61577,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 03 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00265/2026",
+      "data_troca": "",
       "logradouro": "2026-03-18T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61468,7 +61601,7 @@
     {
       "id": "Tue Mar 10 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-19T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61482,12 +61615,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 17 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-19T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61501,12 +61634,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 20 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-22T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61520,12 +61653,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Sun Mar 15 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61539,12 +61672,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Sat Jan 17 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "03/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-24T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61558,12 +61691,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20564
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 11 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-24T07:00:00.000Z",
       "numero": 4,
       "bairro": "",
@@ -61577,12 +61710,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Mar 27 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-30T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61596,12 +61729,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Mar 26 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-03-31T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61615,12 +61748,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 25 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-01T07:00:00.000Z",
       "numero": 7,
       "bairro": "",
@@ -61634,12 +61767,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Thu Mar 19 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "073-2026",
+      "data_troca": "",
       "logradouro": "2026-04-03T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61658,7 +61791,7 @@
     {
       "id": "Thu Mar 12 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-04T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61672,7 +61805,7 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Mar 31 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
@@ -61696,7 +61829,7 @@
     {
       "id": "Wed Apr 01 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "59039756.",
+      "data_troca": "",
       "logradouro": "2026-04-07T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61715,7 +61848,7 @@
     {
       "id": "Thu Apr 02 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-08T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61729,12 +61862,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 07 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-10T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61748,12 +61881,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 08 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "14/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-12T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61767,12 +61900,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20553
+      "dias_ate": null
     },
     {
       "id": "Fri Apr 10 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-13T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61786,12 +61919,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Mar 30 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-14T07:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -61805,12 +61938,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Wed Mar 18 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-16T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61824,12 +61957,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Tue Apr 14 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-17T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61843,12 +61976,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Sat Feb 21 2026 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-19T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61862,12 +61995,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 06 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00421/2026:EE",
+      "data_troca": "",
       "logradouro": "2026-04-21T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61886,7 +62019,7 @@
     {
       "id": "Thu Apr 09 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "01/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-23T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61900,12 +62033,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20566
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 13 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61919,12 +62052,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Fri Apr 17 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "24/01/1970",
+      "data_troca": "",
       "logradouro": "2026-04-27T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61938,12 +62071,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20543
+      "dias_ate": null
     },
     {
       "id": "Wed Apr 15 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "ER/EE-00278/2026",
+      "data_troca": "",
       "logradouro": "2026-04-30T07:00:00.000Z",
       "numero": 2,
       "bairro": "",
@@ -61962,7 +62095,7 @@
     {
       "id": "Sat Dec 13 2025 05:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-05-02T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -61976,12 +62109,12 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     },
     {
       "id": "Mon Apr 20 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "4468565/2025",
+      "data_troca": "",
       "logradouro": "2026-05-05T07:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -62000,7 +62133,7 @@
     {
       "id": "Sat Apr 11 2026 04:00:00 GMT-0300 (Horário Padrão de Brasília)",
       "tipo_reg": "TROCA_POSTE",
-      "data_troca": "15/01/1970",
+      "data_troca": "",
       "logradouro": "2026-11-24T08:00:00.000Z",
       "numero": 1,
       "bairro": "",
@@ -62014,22 +62147,22 @@
       "geo_status": "OK",
       "rede_status": "BASE_REDE_VAZIA",
       "rede_dist_m": null,
-      "dias_ate": -20552
+      "dias_ate": null
     }
   ],
-  "gerado_em": "2026-04-23T20:13:26.049Z",
-  "total": 3264,
+  "gerado_em": "2026-04-23T20:27:43.841Z",
+  "total": 3271,
   "por_status": {
     "EXECUTADO": 2178,
     "CANCELADO": 128,
-    "PENDENTE": 958
+    "PENDENTE": 965
   },
   "por_rede": {
-    "BASE_REDE_VAZIA": 3136,
+    "BASE_REDE_VAZIA": 3143,
     "N/A": 128
   },
   "stats": {
-    "trocas": 3264,
+    "trocas": 3271,
     "obras": 0
   }
 }
