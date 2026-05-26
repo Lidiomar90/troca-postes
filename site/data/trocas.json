@@ -69191,9 +69191,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "FALHOU",
+      "lat": -19.8946741,
+      "lng": -44.0347054,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -300
@@ -69210,9 +69210,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "FALHOU",
+      "lat": -19.9914559,
+      "lng": -43.9019737,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -300
@@ -69875,9 +69875,9 @@
       "responsavel": "Ondacom",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "FALHOU",
+      "lat": -19.9677269,
+      "lng": -43.9786889,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -69953,7 +69953,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -69972,7 +69972,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -69991,7 +69991,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -70008,9 +70008,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "",
+      "lat": -18.5474655,
+      "lng": -42.7680108,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -70029,7 +70029,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -294
@@ -70046,9 +70046,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "",
+      "lat": -19.9709103,
+      "lng": -43.9412949,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70067,7 +70067,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70084,9 +70084,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "",
+      "lat": -20.0407691,
+      "lng": -44.1470301,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70105,7 +70105,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70124,7 +70124,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70143,7 +70143,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70162,7 +70162,7 @@
       "obs": "Qtd postes: 2 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70181,7 +70181,7 @@
       "obs": "Qtd postes: 3 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70200,7 +70200,7 @@
       "obs": "Qtd postes: 4 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70219,7 +70219,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -293
@@ -70238,7 +70238,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70257,7 +70257,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70276,7 +70276,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70295,7 +70295,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70314,7 +70314,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70333,7 +70333,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70352,7 +70352,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70371,7 +70371,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70390,7 +70390,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70409,7 +70409,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70428,7 +70428,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70445,9 +70445,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "",
+      "lat": -21.758113,
+      "lng": -43.3788835,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -292
@@ -70466,7 +70466,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70485,7 +70485,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70504,7 +70504,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70523,7 +70523,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70542,7 +70542,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70561,7 +70561,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70578,9 +70578,9 @@
       "responsavel": "Telemont",
       "status": "EXECUTADO",
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
-      "lat": null,
-      "lng": null,
-      "geo_status": "",
+      "lat": -21.7504907,
+      "lng": -43.3573947,
+      "geo_status": "OK",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70599,7 +70599,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -291
@@ -70618,7 +70618,7 @@
       "obs": "Qtd postes: 2 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -290
@@ -70637,7 +70637,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -290
@@ -70656,7 +70656,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -290
@@ -70675,7 +70675,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -290
@@ -70694,7 +70694,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -290
@@ -70713,7 +70713,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -289
@@ -70732,7 +70732,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -289
@@ -70751,7 +70751,7 @@
       "obs": "Qtd postes: 1 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -289
@@ -70770,7 +70770,7 @@
       "obs": "Qtd postes: 5 | Sigma: - | Vistoria: Concluída",
       "lat": null,
       "lng": null,
-      "geo_status": "",
+      "geo_status": "FALHOU",
       "rede_status": "",
       "rede_dist_m": null,
       "dias_ate": -288
@@ -111797,7 +111797,7 @@
       "dias_ate": 3
     }
   ],
-  "gerado_em": "2026-05-26T16:45:37.476Z",
+  "gerado_em": "2026-05-26T16:53:04.543Z",
   "total": 5884,
   "por_status": {
     "EXECUTADO": 2392,
