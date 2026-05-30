@@ -117595,6 +117595,25 @@
       "id": "59896920",
       "tipo_reg": "TROCA_POSTE",
       "data_troca": "29/05/2026",
+      "logradouro": "RUA PINTOR PABLO PICASSO, 20 31846-300",
+      "numero": 20,
+      "bairro": "",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "responsavel": "Telemont",
+      "status": "PENDENTE",
+      "obs": "Qtd postes: 1 | Sigma: 666045 | Vistoria: Aguardando",
+      "lat": -19.829868,
+      "lng": -43.9106698,
+      "geo_status": "OK",
+      "rede_status": "BASE_REDE_VAZIA",
+      "rede_dist_m": null,
+      "dias_ate": 0
+    },
+    {
+      "id": "59896920",
+      "tipo_reg": "TROCA_POSTE",
+      "data_troca": "29/05/2026",
       "logradouro": "RUA PINTOR PABLO PICASSO, 20 - BELO HORIZONTE",
       "numero": 20,
       "bairro": "",
@@ -117611,19 +117630,19 @@
       "dias_ate": 0
     }
   ],
-  "gerado_em": "2026-05-30T00:13:56.083Z",
-  "total": 6190,
+  "gerado_em": "2026-05-30T00:29:05.788Z",
+  "total": 6191,
   "por_status": {
     "EXECUTADO": 2392,
     "CANCELADO": 147,
-    "PENDENTE": 3651
+    "PENDENTE": 3652
   },
   "por_rede": {
-    "BASE_REDE_VAZIA": 5871,
+    "BASE_REDE_VAZIA": 5872,
     "N/A": 319
   },
   "stats": {
-    "trocas": 6190,
+    "trocas": 6191,
     "obras": 0
   }
 }
